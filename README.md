@@ -1,6 +1,6 @@
 # Microbiota analyses - Code adapted from Zaramela and Zorz (https://github.com/Microbial-Ecosystems-Lab/asthma_obesity and https://github.com/jkzorz/SituSeq/)
 
-## Open tidyverse environment (using conda), then open R in terminal --> install required packages; when finished, open Rstudio, also in terminal; This workflow usually works better than simply oppening Rstudio 
+Open tidyverse environment (using conda), then open R in terminal --> install required packages; when finished, open Rstudio, also in terminal; This workflow usually works better than simply oppening Rstudio 
 
 ## Go to script 1. Preprocessing 
 
