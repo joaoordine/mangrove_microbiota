@@ -1,0 +1,171 @@
+# Visualize taxonomy 
+
+## Loading packages
+library(tidyverse)
+library(data.table)
+library(reshape2)
+library(reshape)
+library(ggplot2)
+library(RColorBrewer)
+library(vegan)
+library(phyloseq)
+library(dplyr) 
+library(ggpubr)
+library(Hmisc)
+library(corrplot)
+library(scales)
+library(broom)
+library(ecodist)
+
+## Phylum bar chart
+### Parameters to set before running and Choosing taxonomic level to plot 
+df <- aggregate(ReadCounts_TaxAnnotation$Counts, list(ReadCounts_TaxAnnotation$Phylum, ReadCounts_TaxAnnotation$ID_Sample), FUN=sum) #  aggregates counts based on the ID_Sample
+colnames(df) <- c("Taxa", "ID_Sample", "Counts")
+cast_data = acast(df, ID_Sample ~ Taxa) # casts data into a new format
+cast_data[is.na(cast_data)] <- 0 # checks for missing values and replaces them with 0 if found
+
+# Creating the relative abundance data.frame
+tcast_data <- t(cast_data)
+relative_abundance <- (t(tcast_data) / apply(tcast_data, 2, sum))*100
+df_relab <- melt(relative_abundance) #  reshapes the data frame
+colnames(df_relab) <- c("ID_Sample", "Taxa", "RelativeAbundance") # Column names are set for the reshaped data frame
+df_relab <- df_relab[-which(df_relab$RelativeAbundance == 0),] # Rows with zero relative abundance are removed.
+df_relabmeta <- merge(df_relab, metadata, by = "ID_Sample") # Metadata is merged with the relative abundance data frame
+
+options(repr.plot.width=15, repr.plot.height=8)
+
+group <- c("Araçá", "Colhereiro")
+
+df_relabmeta$Mangrove <- factor(df_relabmeta$Mangrove, levels = group, ordered = TRUE)
+colourCount = length(unique(df_relabmeta$Taxa)) + 10 # calculates the number of unique taxa plus 10
+getPalette = colorRampPalette(brewer.pal(9, "Set1")) # generates a color palette using the RColorBrewer package
+	
+phylum <- ggplot(data = df_relabmeta, aes(x=ID_Sample, y=RelativeAbundance, fill=Taxa)) + 
+                 geom_bar(stat="identity", width=1, position="stack") +
+                 facet_grid(~ Mangrove, scales = "free", space = "free") +
+                 scale_fill_manual(values=getPalette(colourCount)) +
+                 labs(x = "", y = "Relative Abundance %") +
+                 theme_bw() + guides(fill=guide_legend(ncol=2))  +
+                 theme(#panel.border = element_rect(colour = "black", fill=NA, size=1),
+                       #axis.text.x = element_text(angle = 90, size = 6, face = "bold", colour = "black"),
+                       axis.title.x=element_blank(),
+                       axis.text.x=element_blank(),
+                       axis.ticks.x=element_blank(),
+                       axis.text.y = element_text(angle = 0, size = 16, face = "bold", colour = "black"),
+                       axis.title=element_text(size=20, face = "bold", colour = "black"),
+                       strip.text.x = element_text(size = 16, face = "bold", colour = "black"),
+                       strip.background = element_rect(fill="white"),
+                       legend.title=element_blank(), 
+                       legend.text=element_text(size=12, face = "bold"))
+print(phylum)
+
+## Family bar chart
+### Parameters to set before running and Choosing taxonomic level to plot 
+df1 <- aggregate(ReadCounts_TaxAnnotation$Counts, list(ReadCounts_TaxAnnotation$Family, ReadCounts_TaxAnnotation$ID_Sample), FUN=sum) #  aggregates counts based on the ID_Sample
+colnames(df1) <- c("Taxa", "ID_Sample", "Counts")
+cast_data = acast(df1, ID_Sample ~ Taxa) # casts data into a new format
+cast_data[is.na(cast_data)] <- 0 # checks for missing values and replaces them with 0 if found
+
+# Creating the relative abundance data.frame
+tcast_data <- t(cast_data)
+relative_abundance <- (t(tcast_data) / apply(tcast_data, 2, sum))*100
+df_relab <- melt(relative_abundance) #  reshapes the data frame
+colnames(df_relab) <- c("ID_Sample", "Taxa", "RelativeAbundance") # Column names are set for the reshaped data frame
+df_relab <- df_relab[-which(df_relab$RelativeAbundance == 0),] # Rows with zero relative abundance are removed.
+df_relabmeta <- merge(df_relab, metadata, by = "ID_Sample") # Metadata is merged with the relative abundance data frame
+
+options(repr.plot.width=15, repr.plot.height=8)
+
+group <- c("Araçá", "Colhereiro")
+
+df_relabmeta$Mangrove <- factor(df_relabmeta$Mangrove, levels = group, ordered = TRUE)
+colourCount = length(unique(df_relabmeta$Taxa)) + 10 # calculates the number of unique taxa plus 10
+getPalette = colorRampPalette(brewer.pal(9, "Set1")) # generates a color palette using the RColorBrewer package
+	
+family <- ggplot(data = df_relabmeta, aes(x=ID_Sample, y=RelativeAbundance, fill=Taxa)) + 
+                 geom_bar(stat="identity", width=1, position="stack") +
+                 facet_grid(~ Mangrove, scales = "free", space = "free") +
+                 scale_fill_manual(values=getPalette(colourCount)) +
+                 labs(x = "", y = "Relative Abundance %") +
+                 theme_bw() + guides(fill=guide_legend(ncol=2))  +
+                 theme(#panel.border = element_rect(colour = "black", fill=NA, size=1),
+                       #axis.text.x = element_text(angle = 90, size = 6, face = "bold", colour = "black"),
+                       axis.title.x=element_blank(),
+                       axis.text.x=element_blank(),
+                       axis.ticks.x=element_blank(),
+                       axis.text.y = element_text(angle = 0, size = 16, face = "bold", colour = "black"),
+                       axis.title=element_text(size=20, face = "bold", colour = "black"),
+                       strip.text.x = element_text(size = 16, face = "bold", colour = "black"),
+                       strip.background = element_rect(fill="white"),
+                       legend.title=element_blank(), 
+                       legend.text=element_text(size=12, face = "bold"))
+print(family) # not a really good visualization, it's better to include a category others  
+
+
+## Genus bar chart
+### Parameters to set before running and Choosing taxonomic level to plot 
+df2 <- aggregate(ReadCounts_TaxAnnotation$Counts, list(ReadCounts_TaxAnnotation$Genus, ReadCounts_TaxAnnotation$ID_Sample), FUN=sum) #  aggregates counts based on the ID_Sample
+colnames(df2) <- c("Taxa", "ID_Sample", "Counts")
+cast_data = acast(df2, ID_Sample ~ Taxa) # casts data into a new format
+cast_data[is.na(cast_data)] <- 0 # checks for missing values and replaces them with 0 if found
+
+## Creating the relative abundance data.frame
+tcast_data <- t(cast_data)
+relative_abundance <- (t(tcast_data) / apply(tcast_data, 2, sum))*100
+df_relab <- melt(relative_abundance) #  reshapes the data frame
+colnames(df_relab) <- c("ID_Sample", "Taxa", "RelativeAbundance") # Column names are set for the reshaped data frame
+df_relab <- df_relab[-which(df_relab$RelativeAbundance == 0),] # Rows with zero relative abundance are removed.
+df_relabmeta <- merge(df_relab, metadata, by = "ID_Sample") # Metadata is merged with the relative abundance data frame
+
+## Filter the data to include only taxa whose relative abundance is greater than 1.5%
+df_relabmeta_filt <- subset(df_relabmeta, RelativeAbundance > 1.5) 
+
+## Remove unecessary columns for this plot by column name
+df_relabmeta_filt2 <- select(df_relabmeta_filt, -V., -ID, -pH, -Ca, -H.Al, -OM, -Mg, -SB, -Number_Reads, -Collection_month, -P, -K, -CTC) 
+
+## Filter taxa with relative abundance <= 1.5%
+low_abundance_taxa <- df_relabmeta %>%
+  filter(RelativeAbundance <= 1.5) %>%
+  group_by(ID_Sample) %>%
+  summarise(RelativeAbundance = sum(RelativeAbundance))
+
+  
+## Save both tables and join them by hand since there aren't many rows. Add "Others" in the end so it get's stacked in the bottom of the bar chart 
+write.table(df_relabmeta_filt2, file = "RelAbund_Genera_above15.tsv", sep = "\t", row.names = FALSE)
+write.table(low_abundance_taxa, file = "RelAbund_LowGenera_below15.tsv", sep = "\t", row.names = FALSE)
+ 
+## Imported this dataframe back to R 
+
+## Specifications for plotting 
+RelAbund_Genera_above15_W_Others$Mangrove <- factor(RelAbund_Genera_above15_W_Others$Mangrove, levels = group, ordered = TRUE)
+
+purples <- brewer.pal(n = 5, name = "BuPu")[-c(1:4)] # taking a few colors from the RColorBrewer Package
+blues <- rev(brewer.pal(n = 5, name = "Blues")[-1])
+greens <- brewer.pal(n = 5, name = "YlGn")[-1]
+oranges <- c("#FFEC8B", "#FECC5C", "#fe9a4d", "#fe6f01") # appending some nice oranges, reds, purples, beiges and aquamarines
+reds <- c("#b30024", "#ff0033", "#ff554d", "#ff9e99")
+purples <- append(purples, c("#ac39ac", "#cc66cc", "#ffb3ff"))
+beiges <- c("#999966", "#adad85", "#ccccb3")
+aquamarines <- c("#25a696", "#43d6c5", "#96e8df")
+pinks <- c("#9F2B68", "#F33A6A")
+gray <- c("#808080")
+custom_colors <- c(blues, reds, oranges, greens, purples, rev(beiges), aquamarines, pinks, gray) # combinig all colors in a single vector
+
+## Plotting 
+genus <- ggplot(data = RelAbund_Genera_above15_W_Others, aes(x=ID_Sample, y=RelativeAbundance, fill=reorder(Taxa, --RelativeAbundance))) + 
+                 geom_bar(stat="identity", position="stack", colour = "black") +
+                 facet_grid(~ Mangrove, scales = "free", space = "free") +
+                 scale_fill_manual(values = custom_colors) +
+                 labs(x = "", y = "Relative Abundance %") +
+                 theme_bw() + guides(fill=guide_legend(ncol=2), title = "Genera")  +
+                 theme(axis.title.x=element_blank(),
+                       axis.text.x=element_blank(),
+                       axis.ticks.x=element_blank(),
+                       axis.text.y = element_text(angle = 0, size = 16, face = "bold", colour = "black"),
+                       axis.title=element_text(size=20, face = "bold", colour = "black"),
+                       strip.text.x = element_text(size = 16, face = "bold", colour = "black"),
+                       strip.background = element_rect(fill="white"),
+                       legend.title=element_blank(), 
+                       legend.text=element_text(size=12, face = "bold") 
+  ) 
+print(genus)

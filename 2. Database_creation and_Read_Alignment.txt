@@ -1,0 +1,65 @@
+# Custom database creation
+## Refseq NCBI 16S sequences - as Zaramela did 
+### All sequences' ID were downloaded from NCBI (see file IDs_16Ssequences.txt). To do so we used edirect
+split -l 1000 IDs_16Ssequences.txt # spliting each line # if you run the following codes with the full IDs list, it`ll crash, so we're splitting this into separate files to make it easier
+for i in ls x*; do epost -db nuccore -input ${i} -format acc | efetch -format fasta > ${i}.fasta; done # used to post the IDs to the Entrez system (NCBI nuccore database). This step prepares the IDs for fetching; all files that were separated with the previous command start with 'x' so we use this to run the code in each file
+cat *.fasta > 16Ssequences.fasta # fetch the sequences associated with the posted IDs # concatenate all files into one
+
+## Downloading taxonomical ID database - Refseq NCBI 16S sequences - it contains all hierarchical levels for plotting  
+mkdir data
+cd data
+wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.tar.gz
+tar -zxvf new_taxdump.tar.gz 
+
+# Parsing Refseq16S Database
+## Extract full lineage from NCBI database
+library(tidyverse) 
+
+## Loading reference file (linking refseq accession number and taxID); Reference file was obtained by parsing gff3 file provided by NCBI 
+### First I downloaded the Refseq file available from Zaramela`s code and moved it to data directory
+mv ~/Downloads/RefseqTaxID.txt .
+RefseqTaxID <- read.delim("data/RefseqTaxID.txt", h=T)
+
+tmp <- readLines("data/rankedlineage.dmp") # File obtained from NCBI refseq16S. It reads the contents of the file and stores it into tmp variable
+bac <- grep("Bacteria", tmp) 
+tax <- tmp[bac] # Filtering Lines Containing "Bacteria"; 'tax' now contains only the lines from tmp that contain the string "Bacteria"
+tax <- tax[1:552981] #last line contain invalid configuration
+
+taxtable = NULL # it initializes an empty data frame named taxtable to store the taxonomic information extracted from the lines
+
+for(i in 1:length(tax)){
+    tax1 <- gsub("\t", "", strsplit(tax[i],split = "\\|")[[1]]) # It splits each line using the "|" character as a delimiter and removes any tab characters. To avoid the vertical bar (|) to be interpreted as an escape sequence in your character string (not recognize), I added another `\` to ensure that the vertical bar will be read as a character 
+    tax1[tax1 == ""] <- NA # replaces empty strings with NA, indicating missing values
+    tax2 <- strsplit(tax1[2],split = " ")[[1]]
+    if(length(tax2) >= 2){tax1[3] <- paste0(tax2[1], " ", tax2[2])} 
+    if(length(tax2) < 2){tax1[3] <- tax1[3]} # extracts the species name and ensures it is correctly formatted. If the species name consists of two or more words, it combines them into a single string separated by a space, if the species names is one word, it remains unchanged
+    tax3 = data.frame(id = tax1[1],
+                      name = tax1[2],
+                      Species = tax1[3],
+                      Genus = tax1[4],
+                      Family = tax1[5],
+                      Order = tax1[6],
+                      Class = tax1[7],
+                      Phylum = tax1[8],
+                      Kingdom = tax1[9],
+                      Domain = tax1[10])
+    taxtable <- rbind(taxtable, tax3) # creates a data frame (tax3) containing taxonomic information extracted from each line.
+} # this loop takes a long time to run (> 5hours), so no FREAKING OUT, just chill
+write.table(taxtable, "referencetable_taxonomy_RefseqNCBI_16S.txt", quote = F, sep = "\t", row.names = F)
+
+# Reference alignment - KMA v1.4.14 - Clausen, Aarestrup & Lund. Rapid and precise alignment of raw reads against redundant databases with KMA. BMC Bioinformatics, 19, 307 (2018)
+conda install bioconda::kma
+mkdir 16sequences_index_kma
+mkdir output_16s_refseq
+mkdir ../data/filtered_fastq | mv *.fastq ../data/filtered_fastq # sending all my fastq files - filtered- to my data file 
+
+kma_index -i 16Ssequences.fasta -o 16sequences_index_kma/16Ssequences # create the databases needed to run KMA from a list of FASTA files
+
+for file in filtered_fastq/*.fastq; do
+    filename=$(basename "$file")  # Extract the filename
+    filename_no_ext="${filename%.*}"  # Remove the file extension
+    kma -i "$file" -o "output_16s_refseq/${filename_no_ext}_kma" -t_db 16sequences_index_kma/16Ssequences -bcNano -bc 0.7
+done # map and/or align raw reads to a template database created using kma_index
+
+gunzip Sample* # unzipping frag files to use as input for taxonomical assignation
+mv *.frag ..

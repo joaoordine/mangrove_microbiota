@@ -1,0 +1,34 @@
+# Assigning taxonomy to nanopore reads
+library(tidyverse) 
+getwd()
+setwd("/home/strawberry/Documents/Collaborations/mangrove/analyses_R/data") # changing work directory to data 
+
+## Loading reference file (linking refseq accession number and taxID) - this file was obtained parsing gff3 file provided by NCBI 
+RefseqTaxID <- read.delim("./RefseqTaxID.txt", h=T)
+
+## Loading TaxID full lineage file 
+TaxID_FullLineage <- read.delim("./referencetable_taxonomy_RefseqNCBI_16S.txt", quote = "")
+
+## Loading metadata file including read counts after quality check
+metadata <- read.delim("./metadata_nreads.tsv", h=T)
+
+## REPO with kma output
+fragfiles <- list.files("./", pattern = ".frag$")
+
+## Start loop - ANNOTATE LATER BETTER THIS PART 
+dfall <- NULL # beggnining with an empty vector 
+
+for(i in 1:length(fragfiles)){ 
+    tab <- read.delim(fragfiles[i], h=F) 
+    freqtab <- table(gsub(" .*", "", tab$V6))
+    df <- data.frame(Refseq = names(freqtab), Counts = as.numeric(freqtab))
+    dfTaxID <- merge(RefseqTaxID, df, by = "Refseq")
+    freqtable_tax <- merge(dfTaxID, TaxID_FullLineage, by.x = "TaxID", by.y = "id")
+    freqtable_tax$ID_Sample <- gsub("_filt_kma\\.frag$", "", gsub(".*-", "", fragfiles[i]))
+    freqtable_tax_metadata <- merge(freqtable_tax, metadata, by = "ID_Sample")
+    freqtable_tax_metadata$RelativeAbundance <- ((freqtable_tax_metadata$Counts)/sum(freqtable_tax_metadata$Counts))*100
+    freqtable_tax_metadata$FreqAlignment <- (sum(freqtable_tax_metadata$Counts)/freqtable_tax_metadata$Number_Reads)*100
+    dfall <- rbind(dfall, freqtable_tax_metadata)
+}
+write.table(dfall, "ReadCounts_TaxAnnotation.txt", quote = F, sep = "\t", row.names = F)
+
