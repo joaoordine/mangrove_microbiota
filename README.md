@@ -16,5 +16,4 @@ Open tidyverse environment (using conda), then open R in terminal --> install re
 ## Go to script 6. Phylogeny
 In process
 ## Go to script 7. Correlation heatmap 
-In process
 
