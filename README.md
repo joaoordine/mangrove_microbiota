@@ -8,7 +8,7 @@ Open tidyverse environment (using conda), then open R in terminal --> install re
 ## Go to script 2. Database creation and Reads Alignment
 
 ## Go to script 3. Assigning taxonomy to nanopore reads
-
+## Go to script 3.1 Calculate annotation frequency  
 ## Go to script 4. Diversity analysis
 
 ## Go to script 5. Visualize taxonomy 
