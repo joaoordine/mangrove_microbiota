@@ -101,6 +101,10 @@ dist_metadata$Mangrove <- factor(dist_metadata$Mangrove, levels = group, ordered
 ### Create a plot
 bray_curtis_plot <- ggplot(data = dist_metadata, aes(x=pcoa1, y=pcoa2, color=factor(clustid))) +
   geom_point(size = 4) +   
+  stat_ellipse(level = 0.8) +
+        scale_color_manual(values = my_palette) +
+        geom_hline(yintercept=0) +
+        geom_vline(xintercept=0) +
   scale_color_manual(values = my_palette) +
   labs(x = "PC1",
        y = "PC2", 
@@ -111,4 +115,3 @@ bray_curtis_plot <- ggplot(data = dist_metadata, aes(x=pcoa1, y=pcoa2, color=fac
         axis.text = element_text(size = 12, colour = "black", face="bold"),
         axis.title = element_text(size = 12, colour = "black", face="bold"))
 bray_curtis_plot
-
