@@ -183,7 +183,6 @@ done
 mv quast_results/ quast_results_plasmids
 
 
-
 # Genome annotation 
 
 for file in ./*_scaffold.fasta; do
