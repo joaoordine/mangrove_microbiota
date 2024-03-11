@@ -9,11 +9,13 @@ Open tidyverse environment (using conda), then open R in terminal --> install re
 
 ## Go to script 3. Assigning taxonomy to nanopore reads
 ## Go to script 3.1 Calculate annotation frequency  
+
 ## Go to script 4. Diversity analysis
 
 ## Go to script 5. Visualize taxonomy 
 
-## Go to script 6. Phylogeny
-In process
 ## Go to script 7. Correlation heatmap 
 
+Some mangrove isolates were selected for whole-genome sequencing (Illumina NovaSeq 6000). The assembly, annotation and all including analyses can be assessed in the following script.
+
+## Go to script 8. WGS_processing
