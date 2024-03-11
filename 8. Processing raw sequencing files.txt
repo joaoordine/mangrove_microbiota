@@ -1,0 +1,48 @@
+# Processing Novogene files and creating environments for analyses 
+tar xvzf NovogeneFeb24.tar.gz # decompressing files 
+rm -rf KT_* # removing Matheus' genomes and leaving only mine' and Valeria's 
+mkdir mangrove_Genomes
+mkdir valeria_genomes # then I moved the directories - one for each genome sequenced - to their corresponding projects' directories 
+
+for dir in */; do
+    echo "Extracting files from $dir"
+    cd "$dir"
+    gunzip *.fq.gz
+    cd ..
+done # decompressing files, did this loop once for mangrove and once for valeria's directories 
+
+mkdir all_fastq
+for dir in */; do
+    echo "Sending file copy from $dir"
+    cd "$dir"
+    scp *.fq ../all_fastq
+    cd ..
+done
+
+## Installing required packages for analyses
+conda create --name genome-analysis
+ conda install bioconda::trimmomatic
+ conda install bioconda::flash
+ conda install bioconda::spades   
+ conda install bioconda::fastqc
+
+### For those packages with conflict, I installed them in individual environments
+conda deactivate
+
+conda create --name prokka-genome
+conda activate prokka-genome
+conda install -c conda-forge -c bioconda -c defaults prokka # onda install of Prokka can be sensitive to channel order. Installing like this tends to work better 
+
+conda create --name bowtie-genome
+conda activate bowtie-genome
+conda install bioconda::bowtie2
+
+conda create --name checkm-genome
+conda activate checkm-genome 
+conda install bioconda::checkm-genome
+conda deactivate 
+
+conda create --name multiqc
+conda activate multiqc
+conda install bioconda::multiqc
+

@@ -1,0 +1,61 @@
+## Quality check of raw data before trimming/clipping
+mkdir fastqc_before # Create a directory to store FastQC results before trimming
+
+conda activate genome-analysis
+for dir in */; do
+    echo "Running FastQC in directory: $dir"
+    fastqc -o fastqc_before "${dir}"*.fq
+done # Run FastQC on all .fq files in each subdirectory
+
+conda deactivate 
+conda activate multiqc
+multiqc fastqc_before -p -f # Generate a multiqc report for all FastQC results
+mv multiqc_report.html fastqc_before/multiqc_report_before.html # move the file to the fastq directory and rename it 
+mv multiqc_* fastqc_before/ 
+
+## Removing adapters and low quality reads with Trimmomatic v0.39 --- after checking the multiqc report, there's no need to remove adapters or to trim the reads
+#java -jar /home/guilherme/miniconda3/envs/genome-analysis/share/trimmomatic-0.39-2/trimmomatic.jar PE -trimlog trimmomatic_mangrove.log  \
+#-basein SA1_CKDN240001995-1A_H2YCMDSXC_L2_ \
+#-baseout SA1_output_paired SA1_output_unpaired \
+#ILLUMINACLIP: \
+#LEADING: \
+#TRAILING: \
+#SLIDINGWINDOW: \
+#MINLEN: 
+  
+## Filter out possible human contamination from genomes 
+### Download the Human Reference Genome
+wget https://ftp.ncbi.nlm.nih.gov/refseq/H_sapiens/annotation/GRCh38_latest/refseq_identifiers/GRCh38_latest_genomic.fna.gz 
+
+mkdir bowtie_stuff # Create bowtie2 directory to store its files
+mv GRCh38_latest_genomic.fna.gz bowtie_stuff
+gunzip GRCh38_latest_genomic.fna.gz # extracting the fasta file 
+
+mkdir all_fastq
+find . -type f -name "*.fq" -exec scp {} all_fastq \; # I'm sending a copy of all fastq files to this subdirectory just to make things easier with bowtie2
+
+### Index the Human Reference Genome:
+bowtie2-build GRCh38_latest_genomic.fna human_index
+
+### Align Reads Against the Human Reference Genome
+mkdir bowtie_stuff/uncontaminated_reads # to store reads without human contamination
+bowtie2 -x ~/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/bowtie_stuff/human_index -1 ~/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/all_fastq/*L2_1.fq -2 ~/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/all_fastq/*L2_2.fq -S human_aligned.sam --un bowtie_stuff/uncontaminated_reads -D 20 -R 3 -N 1 -L 20 --very-sensitive-local # 0.04% overall alignment rate, i.e. no contamination detected 
+
+## Merging overlapped reads 
+for file in *.fq; do
+    filename=$(basename -- "$file") # Extract the filename without extensions
+    filename_no_ext="${filename%-*}"
+    flash "$filename_no_ext"-1A_H2YCMDSXC_L2_1.fq "$filename_no_ext"-1A_H2YCMDSXC_L2_2.fq -o "$filename_no_ext" -M 85
+done
+
+mkdir flash_output
+mv *.fastq flash_output/
+mv *.hist flash_output/
+mv *.histogram flash_output/
+
+zip histograms.zip *.histogram 
+scp guilherme@143.107.194.159:/home/guilherme/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/all_fastq/flash_output/histograms.zip . # compacting all histograms and sending them to my computer so I can visualize them; run this code on your own personal computer  
+
+mkdir hist
+mv *.hist hist/
+mv *.histogram hist/ # just cleaning up this directory a little bit more 

@@ -1,0 +1,51 @@
+# Genome annotation 
+
+for file in ./*_scaffold.fasta; do
+    filename=$(basename -- "$file")
+    filename_no_ext="${filename%_scaffold.fasta}"
+    prokka "$file" --outdir "${filename_no_ext}_prokka_out" --force
+done
+
+## for plasmids
+for file in ./*_plasmids.fasta; do
+    prokka "$file" --outdir "${file}_prokkaOUT" --force --centre X --compliant
+done
+
+## Processing prokka output 
+
+mkdir all_fna_genomes
+mkdir all_gff_genomes
+
+outdir="/home/guilherme/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/assembled_genomes/all_scaffolds/all_fna_genomes" # specifying the output directory
+for dir in *_prokka_out/ ; do
+    echo "Renaming/moving fna file from $dir"
+    dirname=$(basename -- "$dir")
+    scp "$dir"/PROKKA_03062024.fna "$outdir"/"$dirname".fna 
+done # copying all .fna files to a separated directory 
+
+outdir="/home/guilherme/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/assembled_genomes/all_scaffolds/all_gff_genomes" # specifying the output directory
+for dir in *_prokka_out/ ; do
+    echo "Renaming/moving fna file from $dir"
+    dirname=$(basename -- "$dir")
+    scp "$dir"/PROKKA_03062024.gff "$outdir"/"$dirname".gff 
+done # copying all .gff files to a separated directory 
+
+# Functional annotation 
+## ABRICATE
+### As usual
+conda create --name abricate
+conda install -c conda-forge -c bioconda -c defaults abricate
+abricate --check
+abricate --list
+
+### Running abricate on different databases
+abricate --db ncbi *_scaffold.fasta > ARGs-ncbi_genomes.faa # running abricate using NCBI database
+abricate --summary ARGs-ncbi_genomes.faa > sum_ARGs_genomes.faa # create boolean table of ARG coverage on genomes
+
+mkdir abricate_output
+mv *.faa abricate_output/
+
+abricate --db vfdb ../*_scaffold.fasta > ./ARGs-vfdb_genomes.faa 
+abricate --db plasmidfinder ../*_scaffold.fasta > ./ARGs-plasmids_genomes.faa
+abricate --db card ../*_scaffold.fasta > ./ARGs-card_genomes.faa
+abricate --summary ARGs-card_genomes.faa > sumCARD_ARGs_genomes.faa
