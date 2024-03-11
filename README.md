@@ -16,6 +16,17 @@ Open tidyverse environment (using conda), then open R in terminal --> install re
 
 ## Go to script 7. Correlation heatmap 
 
-Some mangrove isolates were selected for whole-genome sequencing (Illumina NovaSeq 6000). The assembly, annotation and all including analyses can be assessed in the following script.
+Some mangrove isolates were selected for whole-genome sequencing (Illumina NovaSeq 6000). The assembly, annotation and all including analyses can be assessed in the following scripts.
+- bioinformatic pipeline adapted from Borelli, et al. "Combining functional genomics and whole-genome sequencing to detect antibiotic resistance genes in bacterial strains co-occurring simultaneously in a Brazilian hospital." Antibiotics 10.4 (2021): 419.
 
-## Go to script 8. WGS_processing
+## Go to script 8. Processing raw sequencing files
+
+## Go to script 9. Quality check and filtering
+
+## Go to script 10. Genome assembly and QC
+
+## Go to script 11. Genome annotation
+
+Taxonomical identification of sequenced genomes - TYGS: https://tygs.dsmz.de
+
+Annotation and analysis of secondary metabolite biosynthesis gene clusters was performed with antiSMASH: https://antismash.secondarymetabolites.org/#!/start 
