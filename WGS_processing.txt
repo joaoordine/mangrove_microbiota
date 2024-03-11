@@ -32,7 +32,7 @@ conda deactivate
 
 conda create --name prokka-genome
 conda activate prokka-genome
-conda install bioconda::prokka 
+conda install -c conda-forge -c bioconda -c defaults prokka # onda install of Prokka can be sensitive to channel order. Installing like this tends to work better 
 
 conda create --name bowtie-genome
 conda activate bowtie-genome
@@ -132,23 +132,10 @@ for file in "$input"/*.fastq; do
     ~/miniconda3/envs/genome-analysis/bin/spades.py -o "$assembly_dir" --merged "$filename_no_ext.extendedFrags.fastq" -s "$filename_no_ext.notCombined_1.fastq" -s "$filename_no_ext.notCombined_2.fastq"
 done
 
-############################################################ RUN THOSE AFTER CHECKM RESULTS 
-
-### Running biosyntheticSPAdes - to recover putative biosynthetic gene clusters (BGC)
-mkdir biosyntheticSPAdes_output
-for file in "$input"/*.fastq; do
-    filename=$(basename -- "$file")
-    filename_no_ext="${filename%.*.*}"
-    
-    assembly_dir="/home/guilherme/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/biosyntheticSPAdes_output/${filename_no_ext}_BGC_assembly"
-    mkdir -p "$assembly_dir" # Create a directory for the current genome assembly to store this output 
-    
-    ~/miniconda3/envs/genome-analysis/bin/spades.py -o "$assembly_dir" --merged "$filename_no_ext.extendedFrags.fastq" -s "$filename_no_ext.notCombined_1.fastq" -s "$filename_no_ext.notCombined_2.fastq" --bio
-done
-
 ### Running plasmidSPAdes - to recover only plasmids from WGS 
 mkdir plasmidSPAdes_output
 
+input="/home/guilherme/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/all_fastq/flash_output"
 for file in "$input"/*.fastq; do
     filename=$(basename -- "$file")
     filename_no_ext="${filename%.*.*}"
@@ -159,9 +146,10 @@ for file in "$input"/*.fastq; do
     ~/miniconda3/envs/genome-analysis/bin/spades.py -o "$assembly_dir" --merged "$filename_no_ext.extendedFrags.fastq" -s "$filename_no_ext.notCombined_1.fastq" -s "$filename_no_ext.notCombined_2.fastq" --plasmid
 done
 
-############################################################
 
 ## Renaming scaffold files so they contain the isolate code in their name and are located un a different directory altogether 
+
+### For genome assemblies
 mkdir all_scaffolds
 for dir in *_assembly/; do
     echo "Renaming/moving scaffold file from $dir"
@@ -171,33 +159,86 @@ for dir in *_assembly/; do
     cd ..
 done
 
+### For plasmid assemblies
+mkdir all_scaffolds
+for dir in *_plasmid_assembly/; do
+    echo "Renaming/moving scaffold file from $dir"
+    isolate=$(basename -- "$dir" | sed 's/_.*//') 
+    cd "$dir"
+    scp scaffolds.fasta ../all_scaffolds/"$isolate"_plasmids.fasta 
+    cd ..
+done
+
 ## Quality control of assembled genomes 
 
 ### with CheckM
-conda activate checkm-genome 
-checkm lineage_wf all_scaffolds checkm_output -x fasta ############# NOT ENOUGH RAM MEMORY TO PLACE BINS IN REF GENOME TREE
-checkm len_hist genome_files lenghist_plots # might be interesting to do with fewer genomes 
+#conda activate checkm-genome 
+#checkm lineage_wf all_scaffolds checkm_output -x fasta ############# NOT ENOUGH RAM MEMORY TO PLACE BINS IN REF GENOME TREE
+#checkm len_hist genome_files lenghist_plots # might be interesting to do with fewer genomes 
 
 ### with QUAST - produces better plots of several quality metrics, but don't inform explicitly about % completeness/contamination
-~/guilherme/miniconda3/envs/quast/bin/quast.py *_scaffold.fasta 
+~/guilherme/miniconda3/envs/quast/bin/quast.py *_scaffold.fasta # for genomes
+
+~/guilherme/miniconda3/envs/quast/bin/quast.py *_plasmids.fasta # for plasmids 
+mv quast_results/ quast_results_plasmids
+
 
 
 # Genome annotation 
-prokka
 
-## Functional analysis 
-abricate
-amrfinderplus
-antismash
+for file in ./*_scaffold.fasta; do
+    filename=$(basename -- "$file")
+    filename_no_ext="${filename%_scaffold.fasta}"
+    prokka "$file" --outdir "${filename_no_ext}_prokka_out" --force
+done
 
-## Taxonomical assignation
- conda install bioconda::gtdbtk
+## for plasmids
+for file in ./*_plasmids.fasta; do
+    prokka "$file" --outdir "${file}_prokkaOUT" --force --centre X --compliant
+done
 
+## Processing prokka output 
 
+mkdir all_fna_genomes
+mkdir all_gff_genomes
 
+outdir="/home/guilherme/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/assembled_genomes/all_scaffolds/all_fna_genomes" # specifying the output directory
+for dir in *_prokka_out/ ; do
+    echo "Renaming/moving fna file from $dir"
+    dirname=$(basename -- "$dir")
+    scp "$dir"/PROKKA_03062024.fna "$outdir"/"$dirname".fna 
+done # copying all .fna files to a separated directory 
 
+outdir="/home/guilherme/Documents/novogene_genomes_feb24/NovogeneFeb2024/usftp21.novogene.com/01.RawData/mangrove_Genomes/assembled_genomes/all_scaffolds/all_gff_genomes" # specifying the output directory
+for dir in *_prokka_out/ ; do
+    echo "Renaming/moving fna file from $dir"
+    dirname=$(basename -- "$dir")
+    scp "$dir"/PROKKA_03062024.gff "$outdir"/"$dirname".gff 
+done # copying all .gff files to a separated directory 
 
+# Functional annotation 
+## ABRICATE
+### As usual
+conda create --name abricate
+conda install -c conda-forge -c bioconda -c defaults abricate
+abricate --check
+abricate --list
 
+### Running abricate on different databases
+abricate --db ncbi *_scaffold.fasta > ARGs-ncbi_genomes.faa # running abricate using NCBI database
+abricate --summary ARGs-ncbi_genomes.faa > sum_ARGs_genomes.faa # create boolean table of ARG coverage on genomes
+
+mkdir abricate_output
+mv *.faa abricate_output/
+
+abricate --db vfdb ../*_scaffold.fasta > ./ARGs-vfdb_genomes.faa 
+abricate --db plasmidfinder ../*_scaffold.fasta > ./ARGs-plasmids_genomes.faa
+abricate --db card ../*_scaffold.fasta > ./ARGs-card_genomes.faa
+abricate --summary ARGs-card_genomes.faa > sumCARD_ARGs_genomes.faa
+
+## AntiSMASH - web server DONE! (default parameters)
+
+## Taxonomy - TYGS web server DONE! (default parameters)
 
 
 
