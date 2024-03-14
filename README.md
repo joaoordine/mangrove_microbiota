@@ -30,3 +30,6 @@ Some mangrove isolates were selected for whole-genome sequencing (Illumina NovaS
 Taxonomical identification of sequenced genomes - TYGS: https://tygs.dsmz.de
 
 Annotation and analysis of secondary metabolite biosynthesis gene clusters was performed with antiSMASH: https://antismash.secondarymetabolites.org/#!/start 
+
+When trying to submit the assembled genomes on Genome - NCBI database, I had to trim the scaffolds to avoid issues. For that:
+## Go to script 12. NCBI submission 
