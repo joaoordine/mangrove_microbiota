@@ -1,0 +1,90 @@
+# Submiting assembled genomes - NCBI Genome DB - BioProject PRJNA1042624 
+# -------------------------------------------------------------------------
+# Filtering contigs with less than 200 nt
+## Install and load the Biostrings package if not already installed
+if (!requireNamespace("Biostrings", quietly = TRUE)) {
+  install.packages("Biostrings")
+}
+library(Biostrings)
+
+## Set the working directory to the location of your scaffold FASTA files
+setwd("/home/joao/Documents/IC3/Collaborations/Mangrove_Microbiota/WGS/all_scaffolds")
+
+## List all the scaffold FASTA files
+fasta_files <- list.files(pattern = "\\.fasta$", full.names = TRUE)
+
+## Function to filter sequences shorter than 200 nucleotides
+filter_short_sequences <- function(file_path) {
+  # Read the sequences from the FASTA file
+  sequences <- readDNAStringSet(file_path)
+  
+  # Filter sequences shorter than 200 nucleotides
+  long_sequences <- sequences[nchar(sequences) >= 200]
+  
+  # Write the filtered sequences to a new FASTA file
+  writeXStringSet(long_sequences, file = paste0(tools::file_path_sans_ext(file_path), "_filtered.fasta"))
+}
+
+## Apply the function to each FASTA file
+lapply(fasta_files, filter_short_sequences)
+ 
+# -------------------------------------------------------------------------
+# Removing contaminations identified by NCBI 
+
+## Download all contaminations reports from NCBI and move them to a specified folder
+
+## Trimming contamination reports 
+for file in ./Contamination*; do
+    tail -n 3 "$file" > "${file}.temp"
+    mv "${file}.temp" "$file"
+done
+
+mkdir filtered_scaffolds
+mv *_filtered.fasta filtered_scaffolds/
+mv all_scaffolds/filtered_scaffolds NCBI_submission/
+
+## Removing contaminations 
+### For SA1
+contamination_line=$(grep -n "NODE_71_length_231_cov_129.642857" filtered_scaffolds/SA1_scaffold_filtered.fasta | cut -d ":" -f 1)
+next_line=$((contamination_line + 1)) # Identify the line numbers containing the contamination and the line below it
+sed -e "${contamination_line},${next_line}d" filtered_scaffolds/SA1_scaffold_filtered.fasta > cleaned_SA1_scaffold_filtered.fasta # Exclude contamination 
+grep NODE_71_length_231_cov_129.642857 cleaned_SA1_scaffold_filtered.fasta # checking if it worked
+
+### For the remaining isolates
+contamination_line=$(grep -n "NODE_68_length_228_cov_121.827815" filtered_scaffolds/SB1_scaffold_filtered.fasta | cut -d ":" -f 1)
+next_line=$((contamination_line + 1)) 
+sed -e "${contamination_line},${next_line}d" filtered_scaffolds/SB1_scaffold_filtered.fasta > cleaned_SB1_scaffold_filtered.fasta 
+grep NODE_68_length_228_cov_121.827815 cleaned_SB1_scaffold_filtered.fasta 
+
+contamination_line=$(grep -n "NODE_46_length_226_cov_177.228188" filtered_scaffolds/SB8_scaffold_filtered.fasta | cut -d ":" -f 1)
+next_line=$((contamination_line + 1)) 
+sed -e "${contamination_line},${next_line}d" filtered_scaffolds/SB8_scaffold_filtered.fasta > cleaned_SB8_scaffold_filtered.fasta 
+grep NODE_46_length_226_cov_177.228188 cleaned_SB8_scaffold_filtered.fasta 
+
+contamination_line=$(grep -n "NODE_85_length_221_cov_140.819444" filtered_scaffolds/WB3_scaffold_filtered.fasta | cut -d ":" -f 1)
+next_line=$((contamination_line + 1)) 
+sed -e "${contamination_line},${next_line}d" filtered_scaffolds/WB3_scaffold_filtered.fasta > cleaned_WB3_scaffold_filtered.fasta 
+grep NODE_85_length_221_cov_140.819444 cleaned_WB3_scaffold_filtered.fasta 
+
+contamination_line=$(grep -n "NODE_42_length_222_cov_431.744828" filtered_scaffolds/WB8II_scaffold_filtered.fasta | cut -d ":" -f 1)
+next_line=$((contamination_line + 1)) 
+sed -e "${contamination_line},${next_line}d" filtered_scaffolds/WB8II_scaffold_filtered.fasta > cleaned_WB8II_scaffold_filtered.fasta 
+grep NODE_42_length_222_cov_431.744828 cleaned_WB8II_scaffold_filtered.fasta 
+
+### Renaming them so I can submit them again in NCBI
+rename 's/cleaned_//' cleaned_*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
