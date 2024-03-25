@@ -31,5 +31,8 @@ Taxonomical identification of sequenced genomes - TYGS: https://tygs.dsmz.de
 
 Annotation and analysis of secondary metabolite biosynthesis gene clusters was performed with antiSMASH: https://antismash.secondarymetabolites.org/#!/start 
 
-When trying to submit the assembled genomes on Genome - NCBI database, I had to trim the scaffolds to avoid issues. For that:
+When trying to submit the assembled genomes on Genome - NCBI database, I had to trim the scaffolds to avoid issues. Along with that, I also used an NCBI tool to check for the presence of Illumina adaptors still present in the assembly. For that:
 ## Go to script 12. NCBI submission 
+
+The bioremediation assessment was performed by analyzing growth curves. The script used to plot growth curves and growth rates of each specific isolate can be seen at
+## Go to script 13. Visualize isolates growth
