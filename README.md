@@ -2,7 +2,7 @@
 We aimed to characterize, for the first time, the microbial communities of two highly impacted mangrove fragments in São Sebastião (São Paulo, Brazil), namely Araçá and Colhereiro mangroves. For this, we conducted microbiota analyses of sediments and whole-genome sequencing of isolated native bacteria. Additionally, we evaluated the biodegradation capacity of this bacteria against an urban landfill leachate, a common pollutant in mangrove fragments affected by human waste in urban centers. Results were validated by chemical analysis of the sediments, providing initial support for conserving these ecosystems. In this page, you can find all codes used during the development of the project. 
 - Manuscript pre-print: (replace later with article doi)
 
-# ** 1. Microbiota analysis (Nanopore Sequencing) pipeline **
+# **1. Microbiota analysis (Nanopore Sequencing) pipeline**
 - Code adapted from Zaramela and Zorz (https://github.com/Microbial-Ecosystems-Lab/asthma_obesity and https://github.com/jkzorz/SituSeq/). 
 
 ## R advice 
