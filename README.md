@@ -2,7 +2,7 @@
 We aimed to characterize, for the first time, the microbial communities of two highly impacted mangrove fragments in São Sebastião (São Paulo, Brazil), namely Araçá and Colhereiro mangroves. For this, we conducted microbiota analyses of sediments and whole-genome sequencing of isolated native bacteria. Additionally, we evaluated the biodegradation capacity of this bacteria against an urban landfill leachate, a common pollutant in mangrove fragments affected by human waste in urban centers. Results were validated by chemical analysis of the sediments, providing initial support for conserving these ecosystems. In this page, you can find all codes used during the development of the project. 
 - Manuscript pre-print: (replace later with article doi)
 
-# **1. Microbiota analysis (Nanopore Sequencing) pipeline**
+# *1. Microbiota analysis (Nanopore Sequencing) pipeline*
 - Code adapted from Zaramela and Zorz (https://github.com/Microbial-Ecosystems-Lab/asthma_obesity and https://github.com/jkzorz/SituSeq/). 
 
 ## R advice 
@@ -43,8 +43,8 @@ OBS.: Check IDs_16Ssequences.txt file to avoid running this part of the code
 
 ```
 split -l 1000 IDs_16Ssequences.txt # spliting each line # if you run the following codes with the full IDs list, it`ll crash, so we're splitting this into separate files to make it easier
-for i in ls x*; do epost -db nuccore -input ${i} -format acc | efetch -format fasta > ${i}.fasta; done # used to post the IDs to the Entrez system (NCBI nuccore database). This step prepares the IDs for fetching; all files that were separated with the previous command start with 'x' so we use this to run the code in each file
-cat *.fasta > 16Ssequences.fasta # fetch the sequences associated with the posted IDs # concatenate all files into one
+for i in ls x; do epost -db nuccore -input ${i} -format acc | efetch -format fasta > ${i}.fasta; done # used to post the IDs to the Entrez system (NCBI nuccore database). This step prepares the IDs for fetching; all files that were separated with the previous command start with 'x' so we use this to run the code in each file
+cat .fasta > 16Ssequences.fasta # fetch the sequences associated with the posted IDs # concatenate all files into one
 ```
 
 ## Downloading taxonomical ID database - Refseq NCBI 16S sequences - it contains all hierarchical levels for plotting  
@@ -72,7 +72,7 @@ KMA v1.4.14 - Clausen, Aarestrup & Lund. Rapid and precise alignment of raw read
 conda install bioconda::kma
 mkdir 16sequences_index_kma
 mkdir output_16s_refseq
-mkdir ../data/filtered_fastq | mv *.fastq ../data/filtered_fastq 
+mkdir ../data/filtered_fastq | mv .fastq ../data/filtered_fastq 
 ```
 ### Create the databases needed to run KMA from a list of FASTA files
 ```
@@ -81,17 +81,17 @@ kma_index -i 16Ssequences.fasta -o 16sequences_index_kma/16Ssequences
 
 ### Map and/or align raw reads to a template database created using kma_index
 ```
-for file in filtered_fastq/*.fastq; do
+for file in filtered_fastq/.fastq; do
     filename=$(basename "$file")  # Extract the filename
-    filename_no_ext="${filename%.*}"  # Remove the file extension
+    filename_no_ext="${filename%.}"  # Remove the file extension
     kma -i "$file" -o "output_16s_refseq/${filename_no_ext}_kma" -t_db 16sequences_index_kma/16Ssequences -bcNano -bc 0.7
 done 
 ```
 
 ### Unzipping frag files to use as input for taxonomical assignation
 ```
-gunzip Sample* 
-mv *.frag ..
+gunzip Sample 
+mv .frag ..
 ```
 
 ## Calculate annotation frequency 
@@ -110,7 +110,7 @@ Check script 06.Visualize_taxonomy.ipynb
 # Correlation analysis 
 Check script 07.Correlation_heatmap.ipynb
 
-# ** 2. Isolated bacteria - WGS (Illumina) pipeline **
+# *2. Isolated bacteria - WGS (Illumina) pipeline*
 Some mangrove isolates were selected for whole-genome sequencing (Illumina NovaSeq 6000) due to their features of interest.
 - Pipeline adapted from Borelli, et al. "Combining functional genomics and whole-genome sequencing to detect antibiotic resistance genes in bacterial strains co-occurring simultaneously in a Brazilian hospital." Antibiotics 10.4 (2021): 419.
 
@@ -522,11 +522,11 @@ rename 's/cleaned_//' cleaned_*
 mv *.fasta filtered_scaffolds
 ```
 
-# ** 3. Genome Mining - Environmental Bacteria **
+# *3. Genome Mining - Environmental Bacteria*
 Rapid annotation was performed using RAST web server: https://rast.nmpdr.org/
 
 ## Processing RAST output 
 Check script 09.Process_RAST_out.ipynb
-# ** 4. Bioremediation assessment 
+# *4. Bioremediation assessment* 
 Performed by analyzing growth curves, more specifically their growth rates
 Check script 10.Visualize_isolates_growth.ipynb
