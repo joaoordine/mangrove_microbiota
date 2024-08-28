@@ -1,8 +1,0 @@
-# Calculate mean and SD by group of frequence aligment - percentage of reads that were annotated using that database
-library(dplyr)
-summary_stats <- ReadCounts_TaxAnnotation %>%
-  group_by(Mangrove) %>%
-  summarise(mean_FreqAlignment = mean(FreqAlignment, na.rm = TRUE),
-            sd_FreqAlignment = sd(FreqAlignment, na.rm = TRUE))
-print(summary_stats) # Print the summary statistics
-write.table(summary_stats, file = "freqalignment_stats.tsv", sep = "\t", row.names = FALSE)
