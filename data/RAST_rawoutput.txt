@@ -1,0 +1,551 @@
+> SA1	
+Trait	Subsystem
+Metabolism of Aromatic Compounds	Gentisate degradation
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Biphenyl Degradation
+Metabolism of Aromatic Compounds	Biphenyl Degradation
+Metabolism of Aromatic Compounds	Benzoate degradation
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Nitrosative stress
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Phosphorus Metabolism	Phosphoenolpyruvate phosphomutase
+Phosphorus Metabolism	Phosphoenolpyruvate phosphomutase
+Phosphorus Metabolism	Phosphoenolpyruvate phosphomutase
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Stress Response	Hfl operon
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	Dimethylarginine metabolism
+Stress Response	Dimethylarginine metabolism
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Stress Response	Uptake of selenate and selenite
+Stress Response	Glutathionylspermidine and Trypanothione
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Glutathione: Non-redox reactions
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Glutathione: Redox cycle
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Osmoregulation
+Sulfur Metabolism	Galactosylceramide and Sulfatide metabolism
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+	
+> SA6	
+Trait	Subsystem
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Gentisate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Salicylate ester degradation
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Nitrosative stress
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Osmoregulation
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Glutathione: Redox cycle
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Periplasmic Stress Response
+Stress Response	Hfl operon
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Stress Response	Dimethylarginine metabolism
+Stress Response	Dimethylarginine metabolism
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Sulfur Metabolism	Galactosylceramide and Sulfatide metabolism
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+	
+> SB1	
+Trait	Subsystem
+Metabolism of Aromatic Compounds	Gentisate degradation
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Benzoate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Nitrosative stress
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	Hfl operon
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Dimethylarginine metabolism
+Stress Response	Dimethylarginine metabolism
+Stress Response	Uptake of selenate and selenite
+Stress Response	Glutathione: Non-redox reactions
+Stress Response	Glutathionylspermidine and Trypanothione
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Glutathione: Redox cycle
+Stress Response	Osmoregulation
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Galactosylceramide and Sulfatide metabolism
+	
+> SB8	
+Trait	Subsystem
+Metabolism of Aromatic Compounds	Gentisate degradation
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Benzoate degradation
+Nitrogen Metabolism	Nitrosative stress
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Nitrate and nitrite ammonification
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Stress Response	Uptake of selenate and selenite
+Stress Response	Periplasmic Stress Response
+Stress Response	Hfl operon
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	Dimethylarginine metabolism
+Stress Response	Dimethylarginine metabolism
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Stress Response	Osmoregulation
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Glutathionylspermidine and Trypanothione
+Stress Response	Glutathione: Redox cycle
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Protection from Reactive Oxygen Species
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Galactosylceramide and Sulfatide metabolism
+	
+> WA5	
+Trait	Subsystem
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Benzoate degradation
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Hydroxyaromatic decarboxylase family
+Metabolism of Aromatic Compounds	Gentisate degradation
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Nitrogen Metabolism	Nitrosative stress
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	High affinity phosphate transporter and control of PHO regulon
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Polyphosphate
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Stress Response	Uptake of selenate and selenite
+Stress Response	Hfl operon
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Stress Response	Dimethylarginine metabolism
+Stress Response	Dimethylarginine metabolism
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Osmoregulation
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Glutathione: Redox cycle
+Stress Response	Glutathionylspermidine and Trypanothione
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Glutathione: Non-redox reactions
+Sulfur Metabolism	Galactosylceramide and Sulfatide metabolism
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+	
+> WB3	
+Trait	Subsystem
+Metabolism of Aromatic Compounds	Gentisate degradation
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Quinate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Nitrosative stress
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Nitrogen Metabolism	Ammonia assimilation
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Alkylpyrone synthase
+Stress Response	Osmoregulation
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Protection from Reactive Oxygen Species
+Stress Response	Glutathione: Redox cycle
+Stress Response	Periplasmic Stress Response
+Stress Response	Hfl operon
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	Dimethylarginine metabolism
+Stress Response	Dimethylarginine metabolism
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+	
+> WB8	
+Trait	Subsystem
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Catechol branch of beta-ketoadipate pathway
+Metabolism of Aromatic Compounds	Homogentisate pathway of aromatic compound degradation
+Metabolism of Aromatic Compounds	Homogentisate pathway of aromatic compound degradation
+Metabolism of Aromatic Compounds	Salicylate and gentisate catabolism
+Metabolism of Aromatic Compounds	Gentisate degradation
+Metabolism of Aromatic Compounds	Quinate degradation
+Nitrogen Metabolism	Nitrosative stress
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Nitrogen Metabolism	Denitrifying reductase gene clusters
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Phosphate metabolism
+Phosphorus Metabolism	Polyphosphate
+Phosphorus Metabolism	Polyphosphate
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Secondary Metabolism	Auxin biosynthesis
+Stress Response	Hfl operon
+Stress Response	Hfl operon
+Stress Response	Hfl operon
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	SigmaB stress responce regulation
+Stress Response	Dimethylarginine metabolism
+Stress Response	Dimethylarginine metabolism
+Stress Response	Bacterial hemoglobins
+Stress Response	Bacterial hemoglobins
+Stress Response	Carbon Starvation
+Stress Response	Carbon Starvation
+Stress Response	Periplasmic Stress Response
+Stress Response	Glutathione: Redox cycle
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Oxidative stress
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Choline and Betaine Uptake and Betaine Biosynthesis
+Stress Response	Osmoregulation
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase
+Sulfur Metabolism	Thioredoxin-disulfide reductase

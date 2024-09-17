@@ -1,0 +1,186 @@
+Category	Subsystem	Role	Contig	Start	Stop
+Carbohydrates	Alpha-acetolactate operon	Alpha-acetolactate decarboxylase (EC 4.1.1.5)	NZ_JBBJSR010000010.1	49709	48936
+Carbohydrates	Alpha-acetolactate operon	Acetolactate synthase, catabolic (EC 2.2.1.6)	NZ_JBBJSR010000010.1	51466	49754
+Carbohydrates	Glycerate metabolism	D-glycerate transporter (predicted)	NZ_JBBJSR010000006.1	407978	406707
+Carbohydrates	Glycerate metabolism	2-hydroxy-3-oxopropionate reductase (EC 1.1.1.60)	NZ_JBBJSR010000002.1	568948	569826
+Carbohydrates	Glycerate metabolism	Pyruvate kinase (EC 2.7.1.40)	NZ_JBBJSR010000003.1	123623	124690
+Carbohydrates	Glycerate metabolism	Hydroxypyruvate reductase (EC 1.1.1.81)	NZ_JBBJSR010000006.1	222136	221171
+Carbohydrates	Glycerate metabolism	Glycerate kinase (EC 2.7.1.31)	NZ_JBBJSR010000006.1	406684	405548
+Carbohydrates	TCA Cycle	2-oxoglutarate dehydrogenase E1 component (EC 1.2.4.2)	NZ_JBBJSR010000001.1	375162	377984
+Carbohydrates	TCA Cycle	Succinyl-CoA ligase [ADP-forming] alpha chain (EC 6.2.1.5)	NZ_JBBJSR010000002.1	722128	723051
+Carbohydrates	TCA Cycle	Isocitrate dehydrogenase [NADP] (EC 1.1.1.42)	NZ_JBBJSR010000004.1	614161	612893
+Carbohydrates	TCA Cycle	Malate dehydrogenase (EC 1.1.1.37)	NZ_JBBJSR010000004.1	612757	611822
+Carbohydrates	TCA Cycle	Dihydrolipoamide dehydrogenase of pyruvate dehydrogenase complex (EC 1.8.1.4)	NZ_JBBJSR010000002.1	599899	601308
+Carbohydrates	TCA Cycle	Succinyl-CoA ligase [ADP-forming] beta chain (EC 6.2.1.5)	NZ_JBBJSR010000002.1	720954	722147
+Carbohydrates	TCA Cycle	Fumarate hydratase class I, aerobic (EC 4.2.1.2)	NZ_JBBJSR010000007.1	85132	83603
+Carbohydrates	TCA Cycle	Fumarate hydratase class II (EC 4.2.1.2)	NZ_JBBJSR010000001.1	824034	822577
+Carbohydrates	TCA Cycle	Malate:quinone oxidoreductase (EC 1.1.5.4)	NZ_JBBJSR010000001.1	280105	281607
+Carbohydrates	TCA Cycle	Citrate synthase (si) (EC 2.3.3.1)	NZ_JBBJSR010000004.1	615486	614371
+Carbohydrates	TCA Cycle	Dihydrolipoamide succinyltransferase component (E2) of 2-oxoglutarate dehydrogenase complex (EC 2.3.1.61)	NZ_JBBJSR010000001.1	378000	379256
+Carbohydrates	TCA Cycle	Aconitate hydratase (EC 4.2.1.3)	NZ_JBBJSR010000001.1	338666	341371
+Carbohydrates	Dehydrogenase complexes	Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex (EC 2.3.1.12)	NZ_JBBJSR010000002.1	598578	599894
+Carbohydrates	Dehydrogenase complexes	Dihydrolipoamide dehydrogenase of branched-chain alpha-keto acid dehydrogenase (EC 1.8.1.4)	NZ_JBBJSR010000004.1	204436	203015
+Carbohydrates	Dehydrogenase complexes	Pyruvate dehydrogenase E1 component beta subunit (EC 1.2.4.1)	NZ_JBBJSR010000002.1	597532	598509
+Carbohydrates	Dehydrogenase complexes	Pyruvate dehydrogenase E1 component alpha subunit (EC 1.2.4.1)	NZ_JBBJSR010000002.1	596413	597528
+Carbohydrates	Dehydrogenase complexes	Branched-chain alpha-keto acid dehydrogenase, E1 component, beta subunit (EC 1.2.4.4)	NZ_JBBJSR010000004.1	201954	200971
+Carbohydrates	Dehydrogenase complexes	Cytosol aminopeptidase PepA (EC 3.4.11.1)	NZ_JBBJSR010000003.1	50198	48696
+Carbohydrates	Dehydrogenase complexes	2-oxoglutarate dehydrogenase E1 component (EC 1.2.4.2)	NZ_JBBJSR010000001.1	375162	377984
+Carbohydrates	Dehydrogenase complexes	Dihydrolipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex (EC 2.3.1.168)	NZ_JBBJSR010000004.1	200945	199662
+Carbohydrates	Dehydrogenase complexes	Dihydrolipoamide succinyltransferase component (E2) of 2-oxoglutarate dehydrogenase complex (EC 2.3.1.61)	NZ_JBBJSR010000001.1	378000	379256
+Carbohydrates	Dehydrogenase complexes	Dihydrolipoamide dehydrogenase of acetoin dehydrogenase (EC 1.8.1.4)	NZ_JBBJSR010000001.1	627748	626351
+Carbohydrates	Dehydrogenase complexes	Branched-chain alpha-keto acid dehydrogenase, E1 component, alpha subunit (EC 1.2.4.4)	NZ_JBBJSR010000004.1	203018	201969
+Carbohydrates	Pentose phosphate pathway	Transketolase, N-terminal section (EC 2.2.1.1)	NZ_JBBJSR010000003.1	201584	200754
+Carbohydrates	Pentose phosphate pathway	Transaldolase (EC 2.2.1.2)	NZ_JBBJSR010000007.1	69323	68652
+Carbohydrates	Pentose phosphate pathway	Ribose-phosphate pyrophosphokinase (EC 2.7.6.1)	NZ_JBBJSR010000002.1	396544	395585
+Carbohydrates	Pentose phosphate pathway	Transketolase, C-terminal section (EC 2.2.1.1)	NZ_JBBJSR010000003.1	200757	199792
+Carbohydrates	Pentose phosphate pathway	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	NZ_JBBJSR010000002.1	256047	256943
+Carbohydrates	Pentose phosphate pathway	Transketolase (EC 2.2.1.1)	NZ_JBBJSR010000001.1	300614	302623
+Carbohydrates	Pentose phosphate pathway	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	NZ_JBBJSR010000002.1	286895	286248
+Carbohydrates	Pentose phosphate pathway	Glucose-6-phosphate 1-dehydrogenase (EC 1.1.1.49)	NZ_JBBJSR010000003.1	169954	168452
+Carbohydrates	Pentose phosphate pathway	6-phosphogluconolactonase (EC 3.1.1.31)	NZ_JBBJSR010000007.1	20497	21555
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Dihydrolipoamide dehydrogenase of pyruvate dehydrogenase complex (EC 1.8.1.4)	NZ_JBBJSR010000002.1	599899	601308
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	NAD-dependent protein deacetylase of SIR2 family	NZ_JBBJSR010000002.1	534754	535476
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Aldehyde dehydrogenase (EC 1.2.1.3)	NZ_JBBJSR010000001.1	589497	590954
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Acetaldehyde dehydrogenase (EC 1.2.1.10)	NZ_JBBJSR010000003.1	247459	244850
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Phosphate acetyltransferase (EC 2.3.1.8)	NZ_JBBJSR010000003.1	627451	626474
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Pyruvate dehydrogenase E1 component beta subunit (EC 1.2.4.1)	NZ_JBBJSR010000002.1	597532	598509
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex (EC 2.3.1.12)	NZ_JBBJSR010000002.1	598578	599894
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Acetate kinase (EC 2.7.2.1)	NZ_JBBJSR010000004.1	642796	641606
+Carbohydrates	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Pyruvate dehydrogenase E1 component alpha subunit (EC 1.2.4.1)	NZ_JBBJSR010000002.1	596413	597528
+Carbohydrates	Methylglyoxal Metabolism	Aldehyde dehydrogenase (EC 1.2.1.3)	NZ_JBBJSR010000001.1	589497	590954
+Carbohydrates	Methylglyoxal Metabolism	Methylglyoxal synthase (EC 4.2.3.3)	NZ_JBBJSR010000004.1	102635	102213
+Carbohydrates	Pyruvate Alanine Serine Interconversions	Alanine racemase (EC 5.1.1.1)	NZ_JBBJSR010000009.1	134885	136042
+Carbohydrates	Pyruvate Alanine Serine Interconversions	Branched-chain amino acid aminotransferase (EC 2.6.1.42)	NZ_JBBJSR010000001.1	434487	435557
+Carbohydrates	Pyruvate Alanine Serine Interconversions	L-serine dehydratase, beta subunit (EC 4.3.1.17)	NZ_JBBJSR010000002.1	696580	697242
+Carbohydrates	Pyruvate Alanine Serine Interconversions	Alanine dehydrogenase (EC 1.4.1.1)	NZ_JBBJSR010000003.1	675460	674324
+Carbohydrates	Pyruvate Alanine Serine Interconversions	D-alanine aminotransferase (EC 2.6.1.21)	NZ_JBBJSR010000004.1	698120	697263
+Carbohydrates	Pyruvate Alanine Serine Interconversions	L-alanine:glyoxylate aminotransferase (EC 2.6.1.44)	NZ_JBBJSR010000003.1	254698	253457
+Carbohydrates	Pyruvate Alanine Serine Interconversions	L-serine dehydratase, alpha subunit (EC 4.3.1.17)	NZ_JBBJSR010000002.1	697260	698144
+Carbohydrates	Pyruvate metabolism I: anaplerotic reactions, PEP	Pyruvate kinase (EC 2.7.1.40)	NZ_JBBJSR010000003.1	123623	124690
+Carbohydrates	Pyruvate metabolism I: anaplerotic reactions, PEP	Two-component sensor histidine kinase, malate (EC 2.7.3.-)	NZ_JBBJSR010000003.1	548031	546433
+Carbohydrates	Pyruvate metabolism I: anaplerotic reactions, PEP	NADP-dependent malic enzyme (EC 1.1.1.40)	NZ_JBBJSR010000003.1	260536	259304
+Carbohydrates	Pyruvate metabolism I: anaplerotic reactions, PEP	NAD-dependent malic enzyme (EC 1.1.1.38)	NZ_JBBJSR010000004.1	212151	210454
+Carbohydrates	Pyruvate metabolism I: anaplerotic reactions, PEP	Two-component response regulator, malate (EC 2.7.3.-)	NZ_JBBJSR010000003.1	546436	545729
+Carbohydrates	Pyruvate metabolism I: anaplerotic reactions, PEP	Phosphoenolpyruvate carboxylase (EC 4.1.1.31)	NZ_JBBJSR010000001.1	696162	693403
+Carbohydrates	Glycolate, glyoxylate interconversions	Glyoxylate reductase (EC 1.1.1.79)	NZ_JBBJSR010000006.1	222136	221171
+Carbohydrates	Glycolate, glyoxylate interconversions	Glyoxylate reductase (EC 1.1.1.26)	NZ_JBBJSR010000006.1	222136	221171
+Carbohydrates	Glycolate, glyoxylate interconversions	Hydroxypyruvate reductase (EC 1.1.1.81)	NZ_JBBJSR010000006.1	222136	221171
+Carbohydrates	Glycolate, glyoxylate interconversions	Phosphoglycolate phosphatase (EC 3.1.3.18)	NZ_JBBJSR010000001.1	23883	25118
+Carbohydrates	Glycogen metabolism	Glycogen phosphorylase (EC 2.4.1.1)	NZ_JBBJSR010000004.1	744090	741685
+Carbohydrates	Glycogen metabolism	1,4-alpha-glucan (glycogen) branching enzyme, GH-13-type (EC 2.4.1.18)	NZ_JBBJSR010000004.1	749611	747677
+Carbohydrates	Glycogen metabolism	Glycogen biosynthesis protein GlgD, glucose-1-phosphate adenylyltransferase family	NZ_JBBJSR010000004.1	746556	745528
+Carbohydrates	Glycogen metabolism	Glycogen synthase, ADP-glucose transglucosylase (EC 2.4.1.21)	NZ_JBBJSR010000004.1	745531	744080
+Carbohydrates	Glycogen metabolism	Glucose-1-phosphate adenylyltransferase (EC 2.7.7.27)	NZ_JBBJSR010000003.1	298190	299356
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism	Glycerate kinase (EC 2.7.1.31)	NZ_JBBJSR010000006.1	406684	405548
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism	Sugar diacid utilization regulator SdaR	NZ_JBBJSR010000006.1	409220	408099
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism	2-hydroxy-3-oxopropionate reductase (EC 1.1.1.60)	NZ_JBBJSR010000002.1	568948	569826
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism	D-glycerate transporter (predicted)	NZ_JBBJSR010000006.1	407978	406707
+Carbohydrates	Mannose Metabolism	Mannose-6-phosphate isomerase (EC 5.3.1.8)	NZ_JBBJSR010000001.1	615357	614410
+Carbohydrates	Mannose Metabolism	Putative regulator of the mannose operon, ManO	NZ_JBBJSR010000006.1	217114	216743
+Carbohydrates	Fructose utilization	Transaldolase (EC 2.2.1.2)	NZ_JBBJSR010000007.1	69323	68652
+Carbohydrates	Fructose utilization	Phosphoenolpyruvate-protein phosphotransferase of PTS system (EC 2.7.3.9)	NZ_JBBJSR010000002.1	566976	568694
+Carbohydrates	Fructose utilization	1-phosphofructokinase (EC 2.7.1.56)	NZ_JBBJSR010000001.1	758011	757106
+Carbohydrates	Fructose utilization	Fructokinase (EC 2.7.1.4)	NZ_JBBJSR010000003.1	105702	104713
+Carbohydrates	Fructose utilization	Phosphotransferase system, phosphocarrier protein HPr	NZ_JBBJSR010000002.1	515985	516251
+Carbohydrates	Fructose utilization	Transcriptional repressor of the fructose operon, DeoR family	NZ_JBBJSR010000001.1	758760	758008
+Carbohydrates	D-gluconate and ketogluconates metabolism	Gluconate permease, Bsu4004 homolog	NZ_JBBJSR010000003.1	515930	514581
+Carbohydrates	D-gluconate and ketogluconates metabolism	Gluconate permease	NZ_JBBJSR010000002.1	253660	254991
+Carbohydrates	D-gluconate and ketogluconates metabolism	Glucose 1-dehydrogenase (EC 1.1.1.47)	NZ_JBBJSR010000002.1	481881	482666
+Carbohydrates	D-gluconate and ketogluconates metabolism	Gluconokinase (EC 2.7.1.12)	NZ_JBBJSR010000002.1	258526	256982
+Carbohydrates	D-gluconate and ketogluconates metabolism	High-affinity gluconate transporter GntT	NZ_JBBJSR010000005.1	173679	173113
+Carbohydrates	D-gluconate and ketogluconates metabolism	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	NZ_JBBJSR010000002.1	256047	256943
+Carbohydrates	Deoxyribose and Deoxynucleoside Catabolism	Ribokinase (EC 2.7.1.15)	NZ_JBBJSR010000006.1	387596	386727
+Carbohydrates	Deoxyribose and Deoxynucleoside Catabolism	Phosphopentomutase (EC 5.4.2.7)	NZ_JBBJSR010000004.1	177446	176262
+Carbohydrates	Deoxyribose and Deoxynucleoside Catabolism	Pyrimidine-nucleoside phosphorylase (EC 2.4.2.2)	NZ_JBBJSR010000004.1	175407	174097
+Carbohydrates	Deoxyribose and Deoxynucleoside Catabolism	Purine nucleoside phosphorylase (EC 2.4.2.1)	NZ_JBBJSR010000004.1	5176	4475
+Carbohydrates	Deoxyribose and Deoxynucleoside Catabolism	Deoxyribose-phosphate aldolase (EC 4.1.2.4)	NZ_JBBJSR010000004.1	329953	329282
+Carbohydrates	L-Arabinose utilization	Arabinan endo-1,5-alpha-L-arabinosidase (EC 3.2.1.99)	NZ_JBBJSR010000001.1	104460	105422
+Carbohydrates	L-Arabinose utilization	L-arabinose isomerase (EC 5.3.1.4)	NZ_JBBJSR010000002.1	310980	312470
+Carbohydrates	L-Arabinose utilization	L-ribulose-5-phosphate 4-epimerase (EC 5.1.3.4)	NZ_JBBJSR010000002.1	310233	310958
+Carbohydrates	L-Arabinose utilization	Ribulokinase (EC 2.7.1.16)	NZ_JBBJSR010000002.1	308546	310249
+Carbohydrates	Xylose utilization	Xylose-responsive transcription regulator, ROK family	NZ_JBBJSR010000002.1	444807	443638
+Carbohydrates	Xylose utilization	Xylose isomerase (EC 5.3.1.5)	NZ_JBBJSR010000002.1	445078	446409
+Carbohydrates	Xylose utilization	Xylose ABC transporter, ATP-binding component	NZ_JBBJSR010000002.1	439906	440802
+Carbohydrates	Xylose utilization	Xylulose kinase (EC 2.7.1.17)	NZ_JBBJSR010000002.1	446484	447974
+Carbohydrates	Xylose utilization	Xylose ABC transporter, substrate-binding component	NZ_JBBJSR010000002.1	437626	438933
+Carbohydrates	Xylose utilization	Xyloside transporter XynT	NZ_JBBJSR010000003.1	788610	787225
+Carbohydrates	D-ribose utilization	Ribokinase (EC 2.7.1.15)	NZ_JBBJSR010000006.1	387596	386727
+Carbohydrates	D-ribose utilization	Ribose operon repressor	NZ_JBBJSR010000006.1	388584	387598
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	Sugar diacid utilization regulator SdaR	NZ_JBBJSR010000006.1	409220	408099
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	2-hydroxy-3-oxopropionate reductase (EC 1.1.1.60)	NZ_JBBJSR010000002.1	568948	569826
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	D-glycerate transporter (predicted)	NZ_JBBJSR010000006.1	407978	406707
+Carbohydrates	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	Glycerate kinase (EC 2.7.1.31)	NZ_JBBJSR010000006.1	406684	405548
+Carbohydrates	Chitin and N-acetylglucosamine utilization	N-acetylglucosamine-6-phosphate deacetylase (EC 3.5.1.25)	NZ_JBBJSR010000002.1	266226	267431
+Carbohydrates	Chitin and N-acetylglucosamine utilization	Glucosamine-6-phosphate deaminase (EC 3.5.99.6)	NZ_JBBJSR010000002.1	267431	268189
+Carbohydrates	Chitin and N-acetylglucosamine utilization	Predicted transcriptional regulator of N-Acetylglucosamine utilization, GntR family	NZ_JBBJSR010000002.1	268179	268895
+Carbohydrates	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Aerobic glycerol-3-phosphate dehydrogenase (EC 1.1.5.3)	NZ_JBBJSR010000001.1	890453	888774
+Carbohydrates	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol uptake facilitator protein	NZ_JBBJSR010000001.1	892995	892177
+Carbohydrates	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol kinase (EC 2.7.1.30)	NZ_JBBJSR010000001.1	892120	890627
+Carbohydrates	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol-3-phosphate dehydrogenase [NAD(P)+] (EC 1.1.1.94)	NZ_JBBJSR010000004.1	126802	125753
+Carbohydrates	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerophosphoryl diester phosphodiesterase (EC 3.1.4.46)	NZ_JBBJSR010000004.1	208114	207395
+Carbohydrates	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol-3-phosphate responsive antiterminator (mRNA-binding)	NZ_JBBJSR010000001.1	893749	893207
+Carbohydrates	Inositol catabolism	Inosose dehydratase (EC 4.2.1.44)	NZ_JBBJSR010000001.1	606450	605704
+Carbohydrates	Inositol catabolism	Transcriptional repressor of the myo-inositol catabolic operon DeoR family	NZ_JBBJSR010000002.1	477831	477064
+Carbohydrates	Inositol catabolism	Major myo-inositol transporter IolT	NZ_JBBJSR010000001.1	871548	870085
+Carbohydrates	Inositol catabolism	Inositol transport system sugar-binding protein	NZ_JBBJSR010000005.1	406533	403987
+Carbohydrates	Inositol catabolism	Myo-inositol 2-dehydrogenase (EC 1.1.1.18)	NZ_JBBJSR010000002.1	463472	464503
+Carbohydrates	Inositol catabolism	Glyceraldehyde-3-phosphate ketol-isomerase (EC 5.3.1.1)	NZ_JBBJSR010000002.1	327762	328637
+Carbohydrates	Inositol catabolism	Myo-inositol 2-dehydrogenase 1 (EC 1.1.1.18)	NZ_JBBJSR010000002.1	326656	327693
+Carbohydrates	Inositol catabolism	5-keto-2-deoxygluconokinase (EC 2.7.1.92)	NZ_JBBJSR010000002.1	321321	322316
+Carbohydrates	One-carbon metabolism by tetrahydropterines	Methylenetetrahydrofolate dehydrogenase (NADP+) (EC 1.5.1.5)	NZ_JBBJSR010000001.1	887783	886947
+Carbohydrates	One-carbon metabolism by tetrahydropterines	Formate--tetrahydrofolate ligase (EC 6.3.4.3)	NZ_JBBJSR010000004.1	49245	47572
+Carbohydrates	One-carbon metabolism by tetrahydropterines	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	NZ_JBBJSR010000004.1	275361	274783
+Carbohydrates	One-carbon metabolism by tetrahydropterines	Methenyltetrahydrofolate cyclohydrolase (EC 3.5.4.9)	NZ_JBBJSR010000001.1	887783	886947
+Carbohydrates	One-carbon metabolism by tetrahydropterines	5,10-methylenetetrahydrofolate reductase (EC 1.5.1.20)	NZ_JBBJSR010000005.1	164005	162152
+Carbohydrates	Serine-glyoxylate cycle	Malate dehydrogenase (EC 1.1.1.37)	NZ_JBBJSR010000004.1	612757	611822
+Carbohydrates	Serine-glyoxylate cycle	Serine hydroxymethyltransferase (EC 2.1.2.1)	NZ_JBBJSR010000003.1	585072	583831
+Carbohydrates	Serine-glyoxylate cycle	Methylenetetrahydrofolate dehydrogenase (NADP+) (EC 1.5.1.5)	NZ_JBBJSR010000001.1	887783	886947
+Carbohydrates	Serine-glyoxylate cycle	Enolase (EC 4.2.1.11)	NZ_JBBJSR010000003.1	210594	209299
+Carbohydrates	Serine-glyoxylate cycle	Glycerate kinase (EC 2.7.1.31)	NZ_JBBJSR010000006.1	406684	405548
+Carbohydrates	Serine-glyoxylate cycle	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	NZ_JBBJSR010000004.1	275361	274783
+Carbohydrates	Serine-glyoxylate cycle	Methenyltetrahydrofolate cyclohydrolase (EC 3.5.4.9)	NZ_JBBJSR010000001.1	887783	886947
+Carbohydrates	Serine-glyoxylate cycle	5,10-methylenetetrahydrofolate reductase (EC 1.5.1.20)	NZ_JBBJSR010000005.1	164005	162152
+Carbohydrates	Serine-glyoxylate cycle	Succinyl-CoA ligase [ADP-forming] alpha chain (EC 6.2.1.5)	NZ_JBBJSR010000002.1	722128	723051
+Carbohydrates	Serine-glyoxylate cycle	Citrate synthase (si) (EC 2.3.3.1)	NZ_JBBJSR010000004.1	615486	614371
+Carbohydrates	Serine-glyoxylate cycle	Aconitate hydratase (EC 4.2.1.3)	NZ_JBBJSR010000001.1	338666	341371
+Carbohydrates	Serine-glyoxylate cycle	Succinyl-CoA ligase [ADP-forming] beta chain (EC 6.2.1.5)	NZ_JBBJSR010000002.1	720954	722147
+Carbohydrates	Serine-glyoxylate cycle	Fumarate hydratase class I, aerobic (EC 4.2.1.2)	NZ_JBBJSR010000007.1	85132	83603
+Carbohydrates	Serine-glyoxylate cycle	Formate--tetrahydrofolate ligase (EC 6.3.4.3)	NZ_JBBJSR010000004.1	49245	47572
+Carbohydrates	Serine-glyoxylate cycle	Serine--pyruvate aminotransferase (EC 2.6.1.51)	NZ_JBBJSR010000003.1	254698	253457
+Carbohydrates	Fermentations: Lactate	Acetate kinase (EC 2.7.2.1)	NZ_JBBJSR010000004.1	642796	641606
+Carbohydrates	Fermentations: Lactate	Phosphate acetyltransferase (EC 2.3.1.8)	NZ_JBBJSR010000003.1	627451	626474
+Carbohydrates	Fermentations: Lactate	Acetaldehyde dehydrogenase (EC 1.2.1.10)	NZ_JBBJSR010000003.1	247459	244850
+Carbohydrates	Fermentations: Lactate	L-lactate dehydrogenase (EC 1.1.1.27)	NZ_JBBJSR010000003.1	707033	707980
+Carbohydrates	Fermentations: Mixed acid	Acetaldehyde dehydrogenase (EC 1.2.1.10)	NZ_JBBJSR010000003.1	247459	244850
+Carbohydrates	Fermentations: Mixed acid	Pyruvate formate-lyase activating enzyme (EC 1.97.1.4)	NZ_JBBJSR010000001.1	387154	386420
+Carbohydrates	Fermentations: Mixed acid	Phosphate acetyltransferase (EC 2.3.1.8)	NZ_JBBJSR010000003.1	627451	626474
+Carbohydrates	Fermentations: Mixed acid	Phosphoenolpyruvate carboxylase (EC 4.1.1.31)	NZ_JBBJSR010000001.1	696162	693403
+Carbohydrates	Fermentations: Mixed acid	Alcohol dehydrogenase (EC 1.1.1.1)	NZ_JBBJSR010000001.1	640111	638960
+Carbohydrates	Fermentations: Mixed acid	L-lactate dehydrogenase (EC 1.1.1.27)	NZ_JBBJSR010000003.1	707033	707980
+Carbohydrates	Fermentations: Mixed acid	Pyruvate formate-lyase (EC 2.3.1.54)	NZ_JBBJSR010000001.1	389515	387275
+Carbohydrates	Fermentations: Mixed acid	Acetate kinase (EC 2.7.2.1)	NZ_JBBJSR010000004.1	642796	641606
+Carbohydrates	Acetolactate synthase subunits	Acetolactate synthase large subunit (EC 2.2.1.6)	NZ_JBBJSR010000004.1	552442	550724
+Carbohydrates	Acetolactate synthase subunits	Acetolactate synthase small subunit (EC 2.2.1.6)	NZ_JBBJSR010000004.1	550727	550209
+Carbohydrates	Acetoin, butanediol metabolism	Acetolactate synthase large subunit (EC 2.2.1.6)	NZ_JBBJSR010000004.1	552442	550724
+Carbohydrates	Acetoin, butanediol metabolism	2,3-butanediol dehydrogenase, R-alcohol forming, (R)- and (S)-acetoin-specific (EC 1.1.1.4)	NZ_JBBJSR010000010.1	53910	54953
+Carbohydrates	Acetoin, butanediol metabolism	Acetolactate synthase, catabolic (EC 2.2.1.6)	NZ_JBBJSR010000010.1	51466	49754
+Carbohydrates	Acetoin, butanediol metabolism	Acetolactate synthase small subunit (EC 2.2.1.6)	NZ_JBBJSR010000004.1	550727	550209
+Carbohydrates	Acetoin, butanediol metabolism	Alpha-acetolactate decarboxylase (EC 4.1.1.5)	NZ_JBBJSR010000010.1	49709	48936
+Carbohydrates	Acetoin, butanediol metabolism	2,3-butanediol dehydrogenase, S-alcohol forming, (S)-acetoin-specific (EC 1.1.1.76)	NZ_JBBJSR010000002.1	493654	492881
+Carbohydrates	Acetoin, butanediol metabolism	Dihydrolipoamide dehydrogenase of acetoin dehydrogenase (EC 1.8.1.4)	NZ_JBBJSR010000001.1	627748	626351
+Carbohydrates	Lactose and Galactose Uptake and Utilization	Aldose 1-epimerase (EC 5.1.3.3)	NZ_JBBJSR010000002.1	315983	317032
+Carbohydrates	Lactose and Galactose Uptake and Utilization	UDP-glucose 4-epimerase (EC 5.1.3.2)	NZ_JBBJSR010000001.1	465838	466749
+Carbohydrates	Lactose and Galactose Uptake and Utilization	Galactose-1-phosphate uridylyltransferase (EC 2.7.7.10)	NZ_JBBJSR010000002.1	345332	343851
+Carbohydrates	Lactose and Galactose Uptake and Utilization	Galactokinase (EC 2.7.1.6)	NZ_JBBJSR010000002.1	347516	346347
+Carbohydrates	Lactose and Galactose Uptake and Utilization	Lactose permease	NZ_JBBJSR010000017.1	26633	25389
+Carbohydrates	Beta-Glucoside Metabolism	Transcriptional antiterminator of lichenan operon, BglG family	NZ_JBBJSR010000003.1	504947	503016
+Carbohydrates	Beta-Glucoside Metabolism	Beta-glucoside bgl operon antiterminator, BglG family	NZ_JBBJSR010000001.1	855398	854568
+Carbohydrates	Beta-Glucoside Metabolism	6-phospho-beta-glucosidase (EC 3.2.1.86)	NZ_JBBJSR010000001.1	856949	855528
+Carbohydrates	Beta-Glucoside Metabolism	Outer surface protein of unknown function, cellobiose operon	NZ_JBBJSR010000002.1	413421	414452
+Carbohydrates	Beta-Glucoside Metabolism	Cellobiose phosphotransferase system YdjC-like protein	NZ_JBBJSR010000003.1	677726	677022
+Carbohydrates	Sucrose utilization	Sucrose permease, major facilitator superfamily	NZ_JBBJSR010000006.1	243049	241814
+Carbohydrates	Sucrose utilization	Predicted sucrose permease, MFS family, FucP subfamily	NZ_JBBJSR010000001.1	43292	44578
+Carbohydrates	Sucrose utilization	Sucrose operon repressor ScrR, LacI family	NZ_JBBJSR010000003.1	190113	189130
+Carbohydrates	Sucrose utilization	Fructokinase (EC 2.7.1.4)	NZ_JBBJSR010000003.1	105702	104713
+Carbohydrates	Sucrose utilization	Sucrose-6-phosphate hydrolase (EC 3.2.1.26)	NZ_JBBJSR010000003.1	187445	185964
+Carbohydrates	Carbon storage regulator	Carbon storage regulator	NZ_JBBJSR010000003.1	311603	311382

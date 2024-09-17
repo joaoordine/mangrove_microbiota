@@ -1,0 +1,171 @@
+Category	Subcategory	Subsystem	Role	Features
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol kinase (EC 2.7.1.30)	fig|246786.26.peg.3780
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol uptake facilitator protein	fig|246786.26.peg.3779
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol-3-phosphate ABC transporter, permease protein UgpE (TC 3.A.1.1.3)	fig|246786.26.peg.2855
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Aerobic glycerol-3-phosphate dehydrogenase (EC 1.1.5.3)	fig|246786.26.peg.3781
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol-3-phosphate dehydrogenase [NAD(P)+] (EC 1.1.1.94)	fig|246786.26.peg.3703
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol-3-phosphate ABC transporter, permease protein UgpA (TC 3.A.1.1.3)	fig|246786.26.peg.2856
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerophosphoryl diester phosphodiesterase (EC 3.1.4.46)	fig|246786.26.peg.222, fig|246786.26.peg.535, fig|246786.26.peg.1008, fig|246786.26.peg.2853, fig|246786.26.peg.2982, fig|246786.26.peg.3049
+Carbohydrates	Sugar alcohols	Glycerol and Glycerol-3-phosphate Uptake and Utilization	Glycerol-3-phosphate responsive antiterminator (mRNA-binding)	fig|246786.26.peg.3778
+Carbohydrates	Organic acids	Glycerate metabolism	Pyruvate kinase (EC 2.7.1.40)	fig|246786.26.peg.1374
+Carbohydrates	Organic acids	Glycerate metabolism	D-glycerate transporter (predicted)	fig|246786.26.peg.3040
+Carbohydrates	Organic acids	Glycerate metabolism	2-hydroxy-3-oxopropionate reductase (EC 1.1.1.60)	fig|246786.26.peg.3291
+Carbohydrates	Organic acids	Glycerate metabolism	Hydroxypyruvate reductase (EC 1.1.1.81)	fig|246786.26.peg.2595
+Carbohydrates	Organic acids	Glycerate metabolism	Glycerate kinase (EC 2.7.1.31)	fig|246786.26.peg.3039
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Glycolate dehydrogenase (EC 1.1.99.14), subunit GlcD	fig|246786.26.peg.448
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Malate synthase G (EC 2.3.3.9)	fig|246786.26.peg.449
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Glycine dehydrogenase [decarboxylating] (glycine cleavage system P2 protein) (EC 1.4.4.2)	fig|246786.26.peg.1047
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Aminomethyltransferase (glycine cleavage system T protein) (EC 2.1.2.10)	fig|246786.26.peg.1049
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Serine hydroxymethyltransferase (EC 2.1.2.1)	fig|246786.26.peg.1812
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Glycolate dehydrogenase (EC 1.1.99.14), FAD-binding subunit GlcE	fig|246786.26.peg.446
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Glycine dehydrogenase [decarboxylating] (glycine cleavage system P1 protein) (EC 1.4.4.2)	fig|246786.26.peg.1048
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Glycerate kinase (EC 2.7.1.31)	fig|246786.26.peg.3039
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Phosphoglycolate phosphatase (EC 3.1.3.18)	fig|246786.26.peg.3201
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Glycolate dehydrogenase (EC 1.1.99.14), iron-sulfur subunit GlcF	fig|246786.26.peg.447
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	2-hydroxy-3-oxopropionate reductase (EC 1.1.1.60)	fig|246786.26.peg.3291
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Hydroxypyruvate reductase (EC 1.1.1.81)	fig|246786.26.peg.2595
+Carbohydrates	CO2 fixation	Photorespiration (oxidative C2 cycle)	Glycine cleavage system H protein	fig|246786.26.peg.2560
+Carbohydrates	Aminosugars	Chitin and N-acetylglucosamine utilization	N-acetylglucosamine-6-phosphate deacetylase (EC 3.5.1.25)	fig|246786.26.peg.3083
+Carbohydrates	Aminosugars	Chitin and N-acetylglucosamine utilization	Glucosamine-6-phosphate deaminase (EC 3.5.99.6)	fig|246786.26.peg.3082
+Carbohydrates	Aminosugars	Chitin and N-acetylglucosamine utilization	Predicted transcriptional regulator of N-Acetylglucosamine utilization, GntR family	fig|246786.26.peg.3081
+Carbohydrates	Monosaccharides	Xylose utilization	Xylulose kinase (EC 2.7.1.17)	fig|246786.26.peg.2306
+Carbohydrates	Monosaccharides	Xylose utilization	Xylose isomerase (EC 5.3.1.5)	fig|246786.26.peg.2307
+Carbohydrates	Monosaccharides	Xylose utilization	Xylose-responsive transcription regulator, ROK family	fig|246786.26.peg.2308
+Carbohydrates	Monosaccharides	D-ribose utilization	Ribokinase (EC 2.7.1.15)	fig|246786.26.peg.2958, fig|246786.26.peg.3790
+Carbohydrates	Monosaccharides	D-ribose utilization	Ribose operon repressor	fig|246786.26.peg.2962
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	2-hydroxy-3-oxopropionate reductase (EC 1.1.1.60)	fig|246786.26.peg.3291
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	D-glycerate transporter (predicted)	fig|246786.26.peg.3040
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	Sugar diacid utilization regulator SdaR	fig|246786.26.peg.3041
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism - gjo	Glycerate kinase (EC 2.7.1.31)	fig|246786.26.peg.3039
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism	D-glycerate transporter (predicted)	fig|246786.26.peg.3040
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism	2-hydroxy-3-oxopropionate reductase (EC 1.1.1.60)	fig|246786.26.peg.3291
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism	Sugar diacid utilization regulator SdaR	fig|246786.26.peg.3041
+Carbohydrates	Monosaccharides	D-galactarate, D-glucarate and D-glycerate catabolism	Glycerate kinase (EC 2.7.1.31)	fig|246786.26.peg.3039
+Carbohydrates	Monosaccharides	Mannose Metabolism	Mannose-6-phosphate isomerase (EC 5.3.1.8)	fig|246786.26.peg.1710
+Carbohydrates	Monosaccharides	Mannose Metabolism	Phosphomannomutase (EC 5.4.2.8)	fig|246786.26.peg.1088
+Carbohydrates	Monosaccharides	Fructose utilization	Fructokinase (EC 2.7.1.4)	fig|246786.26.peg.1889
+Carbohydrates	Monosaccharides	Fructose utilization	Phosphotransferase system, phosphocarrier protein HPr	fig|246786.26.peg.98, fig|246786.26.peg.3299
+Carbohydrates	Monosaccharides	Fructose utilization	Transaldolase (EC 2.2.1.2)	fig|246786.26.peg.1830
+Carbohydrates	Monosaccharides	Fructose utilization	1-phosphofructokinase (EC 2.7.1.56)	fig|246786.26.peg.2719
+Carbohydrates	Monosaccharides	Fructose utilization	Phosphoenolpyruvate-protein phosphotransferase of PTS system (EC 2.7.3.9)	fig|246786.26.peg.3298
+Carbohydrates	Monosaccharides	Fructose utilization	Transcriptional repressor of the fructose operon, DeoR family	fig|246786.26.peg.2718
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	2-dehydro-3-deoxyphosphogluconate aldolase (EC 4.1.2.14)	fig|246786.26.peg.209
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Uronate isomerase (EC 5.3.1.12)	fig|246786.26.peg.2317
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Mannonate dehydratase (EC 4.2.1.8)	fig|246786.26.peg.2318
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	D-mannonate oxidoreductase (EC 1.1.1.57)	fig|246786.26.peg.2319
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Transcriptional regulator KdgR, KDG operon repressor	fig|246786.26.peg.451
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Alcohol dehydrogenase, zinc-containing	fig|246786.26.peg.546
+Carbohydrates	Monosaccharides	D-Galacturonate and D-Glucuronate Utilization	Alpha-glucosidase (EC 3.2.1.20)	fig|246786.26.peg.2316, fig|246786.26.peg.2704, fig|246786.26.peg.3766
+Carbohydrates	Monosaccharides	Deoxyribose and Deoxynucleoside Catabolism	Na+ dependent nucleoside transporter NupC	fig|246786.26.peg.2608, fig|246786.26.peg.3337
+Carbohydrates	Monosaccharides	Deoxyribose and Deoxynucleoside Catabolism	Deoxyribose-phosphate aldolase (EC 4.1.2.4)	fig|246786.26.peg.1148, fig|246786.26.peg.2961
+Carbohydrates	Monosaccharides	Deoxyribose and Deoxynucleoside Catabolism	Purine nucleoside phosphorylase (EC 2.4.2.1)	fig|246786.26.peg.316, fig|246786.26.peg.3609
+Carbohydrates	Monosaccharides	Deoxyribose and Deoxynucleoside Catabolism	Pyrimidine-nucleoside phosphorylase (EC 2.4.2.2)	fig|246786.26.peg.3610
+Carbohydrates	Monosaccharides	Deoxyribose and Deoxynucleoside Catabolism	Phosphopentomutase (EC 5.4.2.7)	fig|246786.26.peg.3608
+Carbohydrates	Monosaccharides	Deoxyribose and Deoxynucleoside Catabolism	Ribokinase (EC 2.7.1.15)	fig|246786.26.peg.2958, fig|246786.26.peg.3790
+Carbohydrates	Monosaccharides	D-gluconate and ketogluconates metabolism	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	fig|246786.26.peg.976, fig|246786.26.peg.2445
+Carbohydrates	Monosaccharides	D-gluconate and ketogluconates metabolism	Gluconokinase (EC 2.7.1.12)	fig|246786.26.peg.2446
+Carbohydrates	Monosaccharides	D-gluconate and ketogluconates metabolism	Gluconate operon transcriptional repressor	fig|246786.26.peg.3226
+Carbohydrates	Monosaccharides	D-gluconate and ketogluconates metabolism	Gluconate permease, Bsu4004 homolog	fig|246786.26.peg.3225
+Carbohydrates	Monosaccharides	D-gluconate and ketogluconates metabolism	Glucose 1-dehydrogenase (EC 1.1.1.47)	fig|246786.26.peg.367
+Carbohydrates	Monosaccharides	D-gluconate and ketogluconates metabolism	2-ketogluconate kinase (EC 2.7.1.13)	fig|246786.26.peg.207
+Carbohydrates	Monosaccharides	2-Ketogluconate Utilization	2-ketogluconate transporter	fig|246786.26.peg.208
+Carbohydrates	Monosaccharides	2-Ketogluconate Utilization	2-ketogluconate utilization repressor PtxS	fig|246786.26.peg.210
+Carbohydrates	Monosaccharides	2-Ketogluconate Utilization	2-ketogluconate kinase (EC 2.7.1.13)	fig|246786.26.peg.207
+Carbohydrates	Carbohydrates - no subcategory	Carbon storage regulator	Carbon storage regulator	fig|246786.26.peg.1640
+Carbohydrates	Polysaccharides	Glycogen metabolism	Glycogen phosphorylase (EC 2.4.1.1)	fig|246786.26.peg.1560
+Carbohydrates	Polysaccharides	Glycogen metabolism	1,4-alpha-glucan (glycogen) branching enzyme, GH-13-type (EC 2.4.1.18)	fig|246786.26.peg.1564
+Carbohydrates	Polysaccharides	Glycogen metabolism	Glycogen biosynthesis protein GlgD, glucose-1-phosphate adenylyltransferase family	fig|246786.26.peg.1562
+Carbohydrates	Polysaccharides	Glycogen metabolism	Glycogen synthase, ADP-glucose transglucosylase (EC 2.4.1.21)	fig|246786.26.peg.1561
+Carbohydrates	Polysaccharides	Glycogen metabolism	Glucose-1-phosphate adenylyltransferase (EC 2.7.7.27)	fig|246786.26.peg.1563
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Dihydrolipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex (EC 2.3.1.168)	fig|246786.26.peg.998
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Dihydrolipoamide succinyltransferase component (E2) of 2-oxoglutarate dehydrogenase complex (EC 2.3.1.61)	fig|246786.26.peg.353
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Branched-chain alpha-keto acid dehydrogenase, E1 component, alpha subunit (EC 1.2.4.4)	fig|246786.26.peg.1000
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Pyruvate dehydrogenase E1 component beta subunit (EC 1.2.4.1)	fig|246786.26.peg.897
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Dihydrolipoamide dehydrogenase of branched-chain alpha-keto acid dehydrogenase (EC 1.8.1.4)	fig|246786.26.peg.1001
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex (EC 2.3.1.12)	fig|246786.26.peg.895
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Branched-chain alpha-keto acid dehydrogenase, E1 component, beta subunit (EC 1.2.4.4)	fig|246786.26.peg.999
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Pyruvate dehydrogenase E1 component alpha subunit (EC 1.2.4.1)	fig|246786.26.peg.898
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	2-oxoglutarate dehydrogenase E1 component (EC 1.2.4.2)	fig|246786.26.peg.352
+Carbohydrates	Central carbohydrate metabolism	Dehydrogenase complexes	Cytosol aminopeptidase PepA (EC 3.4.11.1)	fig|246786.26.peg.2622
+Carbohydrates	Central carbohydrate metabolism	Pentose phosphate pathway	Ribose-phosphate pyrophosphokinase (EC 2.7.6.1)	fig|246786.26.peg.4194
+Carbohydrates	Central carbohydrate metabolism	Pentose phosphate pathway	Transaldolase (EC 2.2.1.2)	fig|246786.26.peg.1830
+Carbohydrates	Central carbohydrate metabolism	Pentose phosphate pathway	Glucose-6-phosphate 1-dehydrogenase (EC 1.1.1.49)	fig|246786.26.peg.965
+Carbohydrates	Central carbohydrate metabolism	Pentose phosphate pathway	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	fig|246786.26.peg.727
+Carbohydrates	Central carbohydrate metabolism	Pentose phosphate pathway	6-phosphogluconolactonase (EC 3.1.1.31)	fig|246786.26.peg.3143
+Carbohydrates	Central carbohydrate metabolism	Pentose phosphate pathway	Transketolase (EC 2.2.1.1)	fig|246786.26.peg.578
+Carbohydrates	Central carbohydrate metabolism	Pentose phosphate pathway	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	fig|246786.26.peg.976, fig|246786.26.peg.2445
+Carbohydrates	Central carbohydrate metabolism	Glyoxylate bypass	Malate synthase G (EC 2.3.3.9)	fig|246786.26.peg.449
+Carbohydrates	Central carbohydrate metabolism	Glyoxylate bypass	Isocitrate lyase (EC 4.1.3.1)	fig|246786.26.peg.2013
+Carbohydrates	Central carbohydrate metabolism	Glyoxylate bypass	Citrate synthase (si) (EC 2.3.3.1)	fig|246786.26.peg.226, fig|246786.26.peg.1370
+Carbohydrates	Central carbohydrate metabolism	Glyoxylate bypass	Aconitate hydratase (EC 4.2.1.3)	fig|246786.26.peg.561
+Carbohydrates	Central carbohydrate metabolism	Glyoxylate bypass	Malate dehydrogenase (EC 1.1.1.37)	fig|246786.26.peg.1368
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Dihydrolipoamide dehydrogenase of pyruvate dehydrogenase complex (EC 1.8.1.4)	fig|246786.26.peg.894
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Malate dehydrogenase (EC 1.1.1.37)	fig|246786.26.peg.1368
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Isocitrate dehydrogenase [NADP] (EC 1.1.1.42)	fig|246786.26.peg.1369
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Succinyl-CoA ligase [ADP-forming] alpha chain (EC 6.2.1.5)	fig|246786.26.peg.695
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	2-oxoglutarate dehydrogenase E1 component (EC 1.2.4.2)	fig|246786.26.peg.352
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Dihydrolipoamide succinyltransferase component (E2) of 2-oxoglutarate dehydrogenase complex (EC 2.3.1.61)	fig|246786.26.peg.353
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Aconitate hydratase (EC 4.2.1.3)	fig|246786.26.peg.561
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Citrate synthase (si) (EC 2.3.3.1)	fig|246786.26.peg.226, fig|246786.26.peg.1370
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Fumarate hydratase class II (EC 4.2.1.2)	fig|246786.26.peg.2465
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Fumarate hydratase class I, aerobic (EC 4.2.1.2)	fig|246786.26.peg.3803
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Malate:quinone oxidoreductase (EC 1.1.5.4)	fig|246786.26.peg.1970
+Carbohydrates	Central carbohydrate metabolism	TCA Cycle	Succinyl-CoA ligase [ADP-forming] beta chain (EC 6.2.1.5)	fig|246786.26.peg.696
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism I: anaplerotic reactions, PEP	Phosphoenolpyruvate carboxykinase [ATP] (EC 4.1.1.49)	fig|246786.26.peg.1498
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism I: anaplerotic reactions, PEP	NADP-dependent malic enzyme (EC 1.1.1.40)	fig|246786.26.peg.1379
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism I: anaplerotic reactions, PEP	Phosphoenolpyruvate carboxylase (EC 4.1.1.31)	fig|246786.26.peg.219
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism I: anaplerotic reactions, PEP	Pyruvate kinase (EC 2.7.1.40)	fig|246786.26.peg.1374
+Carbohydrates	Central carbohydrate metabolism	Glycolate, glyoxylate interconversions	Glyoxylate reductase (EC 1.1.1.79)	fig|246786.26.peg.2595
+Carbohydrates	Central carbohydrate metabolism	Glycolate, glyoxylate interconversions	Phosphoglycolate phosphatase (EC 3.1.3.18)	fig|246786.26.peg.3201
+Carbohydrates	Central carbohydrate metabolism	Glycolate, glyoxylate interconversions	Glycolate dehydrogenase (EC 1.1.99.14), FAD-binding subunit GlcE	fig|246786.26.peg.446
+Carbohydrates	Central carbohydrate metabolism	Glycolate, glyoxylate interconversions	Glyoxylate reductase (EC 1.1.1.26)	fig|246786.26.peg.2595
+Carbohydrates	Central carbohydrate metabolism	Glycolate, glyoxylate interconversions	Glycolate dehydrogenase (EC 1.1.99.14), subunit GlcD	fig|246786.26.peg.448
+Carbohydrates	Central carbohydrate metabolism	Glycolate, glyoxylate interconversions	Glycolate dehydrogenase (EC 1.1.99.14), iron-sulfur subunit GlcF	fig|246786.26.peg.447
+Carbohydrates	Central carbohydrate metabolism	Glycolate, glyoxylate interconversions	Hydroxypyruvate reductase (EC 1.1.1.81)	fig|246786.26.peg.2595
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Acetyltransferase AcuA, acetyl-CoA synthetase inhibitor	fig|246786.26.peg.1429
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Dihydrolipoamide dehydrogenase of pyruvate dehydrogenase complex (EC 1.8.1.4)	fig|246786.26.peg.894
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Aldehyde dehydrogenase (EC 1.2.1.3)	fig|246786.26.peg.364, fig|246786.26.peg.1527, fig|246786.26.peg.2802, fig|246786.26.peg.2804, fig|246786.26.peg.3416, fig|246786.26.peg.4045
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	NAD-independent protein deacetylase AcuC	fig|246786.26.peg.1431
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Phosphate acetyltransferase (EC 2.3.1.8)	fig|246786.26.peg.1873
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Dihydrolipoamide acetyltransferase component of pyruvate dehydrogenase complex (EC 2.3.1.12)	fig|246786.26.peg.895
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Pyruvate dehydrogenase E1 component beta subunit (EC 1.2.4.1)	fig|246786.26.peg.897
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Acetate kinase (EC 2.7.2.1)	fig|246786.26.peg.1400
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Pyruvate dehydrogenase E1 component alpha subunit (EC 1.2.4.1)	fig|246786.26.peg.898
+Carbohydrates	Central carbohydrate metabolism	Pyruvate metabolism II: acetyl-CoA, acetogenesis from pyruvate	Acetate permease ActP (cation/acetate symporter)	fig|246786.26.peg.2213
+Carbohydrates	Central carbohydrate metabolism	Methylglyoxal Metabolism	Aldehyde dehydrogenase (EC 1.2.1.3)	fig|246786.26.peg.364, fig|246786.26.peg.1527, fig|246786.26.peg.2802, fig|246786.26.peg.2804, fig|246786.26.peg.3416, fig|246786.26.peg.4045, fig|246786.26.peg.364, fig|246786.26.peg.1527, fig|246786.26.peg.2802, fig|246786.26.peg.2804, fig|246786.26.peg.3416, fig|246786.26.peg.4045
+Carbohydrates	Central carbohydrate metabolism	Methylglyoxal Metabolism	Methylglyoxal synthase (EC 4.2.3.3)	fig|246786.26.peg.29
+Carbohydrates	Central carbohydrate metabolism	Methylglyoxal Metabolism	Aldehyde dehydrogenase A (EC 1.2.1.22)	fig|246786.26.peg.3064
+Carbohydrates	Central carbohydrate metabolism	Pyruvate Alanine Serine Interconversions	Branched-chain amino acid aminotransferase (EC 2.6.1.42)	fig|246786.26.peg.1308
+Carbohydrates	Central carbohydrate metabolism	Pyruvate Alanine Serine Interconversions	Alanine racemase (EC 5.1.1.1)	fig|246786.26.peg.4073
+Carbohydrates	Central carbohydrate metabolism	Pyruvate Alanine Serine Interconversions	D-alanine aminotransferase (EC 2.6.1.21)	fig|246786.26.peg.3514
+Carbohydrates	Central carbohydrate metabolism	Pyruvate Alanine Serine Interconversions	L-serine dehydratase, alpha subunit (EC 4.3.1.17)	fig|246786.26.peg.720
+Carbohydrates	Central carbohydrate metabolism	Pyruvate Alanine Serine Interconversions	Alanine dehydrogenase (EC 1.4.1.1)	fig|246786.26.peg.1390, fig|246786.26.peg.2632
+Carbohydrates	Central carbohydrate metabolism	Pyruvate Alanine Serine Interconversions	L-serine dehydratase, beta subunit (EC 4.3.1.17)	fig|246786.26.peg.721
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Aldose 1-epimerase (EC 5.1.3.3)	fig|246786.26.peg.2984
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Galactose-1-phosphate uridylyltransferase (EC 2.7.7.10)	fig|246786.26.peg.2985
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	UDP-glucose 4-epimerase (EC 5.1.3.2)	fig|246786.26.peg.459, fig|246786.26.peg.1712, fig|246786.26.peg.2170, fig|246786.26.peg.2871, fig|246786.26.peg.2986
+Carbohydrates	Di- and oligosaccharides	Lactose and Galactose Uptake and Utilization	Galactokinase (EC 2.7.1.6)	fig|246786.26.peg.2987
+Carbohydrates	Di- and oligosaccharides	Sucrose utilization	Sucrose-6-phosphate hydrolase (EC 3.2.1.26)	fig|246786.26.peg.1888
+Carbohydrates	Di- and oligosaccharides	Sucrose utilization	Fructokinase (EC 2.7.1.4)	fig|246786.26.peg.1889
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.35)	fig|246786.26.peg.880, fig|246786.26.peg.3124, fig|246786.26.peg.3125, fig|246786.26.peg.3472
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	3-hydroxybutyryl-CoA dehydratase (EC 4.2.1.55)	fig|246786.26.peg.3120
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	Acetyl-CoA acetyltransferase (EC 2.3.1.9)	fig|246786.26.peg.884, fig|246786.26.peg.1854, fig|246786.26.peg.3122, fig|246786.26.peg.3471, fig|246786.26.peg.3593
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	Electron transfer flavoprotein, alpha subunit	fig|246786.26.peg.1326
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	Enoyl-CoA hydratase (EC 4.2.1.17)	fig|246786.26.peg.809, fig|246786.26.peg.874, fig|246786.26.peg.879, fig|246786.26.peg.1328, fig|246786.26.peg.2007
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	3-hydroxybutyryl-CoA dehydrogenase (EC 1.1.1.157)	fig|246786.26.peg.880, fig|246786.26.peg.1853, fig|246786.26.peg.3124, fig|246786.26.peg.3125, fig|246786.26.peg.3472
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	3-hydroxybutyrate dehydrogenase (EC 1.1.1.30)	fig|246786.26.peg.324, fig|246786.26.peg.3627
+Carbohydrates	Fermentation	Acetyl-CoA fermentation to Butyrate	Electron transfer flavoprotein, beta subunit	fig|246786.26.peg.1327
+Carbohydrates	Fermentation	Acetolactate synthase subunits	Acetolactate synthase small subunit (EC 2.2.1.6)	fig|246786.26.peg.1306
+Carbohydrates	Fermentation	Acetolactate synthase subunits	Acetolactate synthase large subunit (EC 2.2.1.6)	fig|246786.26.peg.1307
+Carbohydrates	Fermentation	Butanol Biosynthesis	Acetyl-CoA acetyltransferase (EC 2.3.1.9)	fig|246786.26.peg.884, fig|246786.26.peg.1854, fig|246786.26.peg.3122, fig|246786.26.peg.3471, fig|246786.26.peg.3593
+Carbohydrates	Fermentation	Butanol Biosynthesis	Enoyl-CoA hydratase (EC 4.2.1.17)	fig|246786.26.peg.809, fig|246786.26.peg.874, fig|246786.26.peg.879, fig|246786.26.peg.1328, fig|246786.26.peg.2007
+Carbohydrates	Fermentation	Butanol Biosynthesis	Alcohol dehydrogenase (EC 1.1.1.1)	fig|246786.26.peg.2803, fig|246786.26.peg.4244
+Carbohydrates	Fermentation	Butanol Biosynthesis	3-hydroxybutyryl-CoA dehydrogenase (EC 1.1.1.157)	fig|246786.26.peg.880, fig|246786.26.peg.1853, fig|246786.26.peg.3124, fig|246786.26.peg.3125, fig|246786.26.peg.3472
+Carbohydrates	Fermentation	Fermentations: Lactate	L-lactate dehydrogenase (EC 1.1.1.27)	fig|246786.26.peg.2426
+Carbohydrates	Fermentation	Fermentations: Lactate	Phosphate acetyltransferase (EC 2.3.1.8)	fig|246786.26.peg.1873
+Carbohydrates	Fermentation	Fermentations: Lactate	Acetate kinase (EC 2.7.2.1)	fig|246786.26.peg.1400
+Carbohydrates	One-carbon Metabolism	One-carbon metabolism by tetrahydropterines	Formate--tetrahydrofolate ligase (EC 6.3.4.3)	fig|246786.26.peg.107
+Carbohydrates	One-carbon Metabolism	One-carbon metabolism by tetrahydropterines	Methylenetetrahydrofolate dehydrogenase (NADP+) (EC 1.5.1.5)	fig|246786.26.peg.1019
+Carbohydrates	One-carbon Metabolism	One-carbon metabolism by tetrahydropterines	Methenyltetrahydrofolate cyclohydrolase (EC 3.5.4.9)	fig|246786.26.peg.1019
+Carbohydrates	One-carbon Metabolism	One-carbon metabolism by tetrahydropterines	Formyltetrahydrofolate deformylase (EC 3.5.1.10)	fig|246786.26.peg.1528
+Carbohydrates	One-carbon Metabolism	One-carbon metabolism by tetrahydropterines	5,10-methylenetetrahydrofolate reductase (EC 1.5.1.20)	fig|246786.26.peg.2079
