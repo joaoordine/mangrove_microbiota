@@ -2,8 +2,7 @@
 We aimed to characterize, for the first time, the microbial communities of two highly impacted mangrove fragments in São Sebastião (São Paulo, Brazil), namely Araçá and Colhereiro mangroves. For this, we conducted microbiota analyses of sediments and whole-genome sequencing of isolated native bacteria. Additionally, we evaluated the biodegradation capacity of this bacteria against an urban landfill leachate, a common pollutant in mangrove fragments affected by human waste in urban centers. Results were validated by chemical analysis of the sediments, providing initial support for conserving these ecosystems. In this page, you can find all codes used during the development of the project. 
 - Manuscript pre-print: (replace later with article doi)
 
-# *1. Microbiota analysis (Nanopore Sequencing) pipeline*
-- Code adapted from Zaramela and Zorz (https://github.com/Microbial-Ecosystems-Lab/asthma_obesity and https://github.com/jkzorz/SituSeq/). 
+# ** 1. Microbiota analysis (Nanopore Sequencing) pipeline **
 
 ## R advice 
 1. Open tidyverse environment (using conda), then open R in terminal 
@@ -17,100 +16,60 @@ This workflow usually works better than simply oppening Rstudio
 for file in ID*fastq; do mv "$file" "Sample-$file"; done
 ```
 
-## Quality control - before trimming/clipping
+## Quality control - before trimming raw ONT reads - NanoPack
 ```
-mkdir fastqc_before
-fastqc -o fastqc_before *.fastq
-multiqc fastqc_before
-mv multiqc_report.html multiqc_report_before.html
-```
+mkdir -p nanoqc_out
+# NanoPlot
+NanoPlot -o nanoqc_out/ --no_static --tsv_stats --N50 --threads 5 --fastq Sample* 
 
-Check script 01.Preprocessing.ipynb 
+# NanoComp
+NanoComp -o nanoqc_out/ -t 5 --tsv_stats --make_no_static --fastq Sample*
 
-## Quality control - after trimming/clipping 
-```
-mkdir fastqc_after # I created this directory inside the `filtered`one 
-fastqc -o fastqc_after *.fastq
-multiqc fastqc_after
-mv multiqc_report.html multiqc_report_after.html
+# nanoQC
+for file in Sample*; do
+    nanoQC -o nanoqc_out/ -l 400 "$file" 
+done
 ```
 
-# Custom database creation
-Using Refseq NCBI 16S sequences 
+## Trimming raw files - Chopper
+mkdir -p chopper_filter
+for file in Sample*; do
+    chopper --quality 12 --minlength 1200 --maxlength 1800 --headcrop 150 --tailcrop 150 --threads 5 --input "$file" > chopper_filter/"${file%.fastq}_filtered.fastq"
+done
 
-## Download sequences' ID from NCBI - using edirect 
-OBS.: Check IDs_16Ssequences.txt file to avoid running this part of the code
-
+## Quality control - after trimming raw ONT reads - NanoPack 
 ```
-split -l 1000 IDs_16Ssequences.txt # spliting each line # if you run the following codes with the full IDs list, it`ll crash, so we're splitting this into separate files to make it easier
-for i in ls x; do epost -db nuccore -input ${i} -format acc | efetch -format fasta > ${i}.fasta; done # used to post the IDs to the Entrez system (NCBI nuccore database). This step prepares the IDs for fetching; all files that were separated with the previous command start with 'x' so we use this to run the code in each file
-cat .fasta > 16Ssequences.fasta # fetch the sequences associated with the posted IDs # concatenate all files into one
-```
+cd chopper_filter 
+mkdir -p nanoqc_out
+# NanoPlot
+NanoPlot -o nanoqc_out/ --no_static --tsv_stats --N50 --threads 5 --fastq *.fastq 
 
-## Downloading taxonomical ID database - Refseq NCBI 16S sequences - it contains all hierarchical levels for plotting  
-```
-mkdir data
-cd data
-wget https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/new_taxdump/new_taxdump.tar.gz
-tar -zxvf new_taxdump.tar.gz 
-```
+# NanoComp
+NanoComp -o nanoqc_out/ -t 5 --tsv_stats --make_no_static --fastq *.fastq
 
-## Download the Refseq file available from Zaramela`s code and moved it to data directory
-The reference file was obtained by parsing gff3 file provided by NCBI.
-  
+# nanoQC
+for file in *.fastq; do
+    nanoQC -o nanoqc_out/ -l 400 "$file" 
+done
 ```
-mv ~/Downloads/RefseqTaxID.txt .
-```
+## Count number of reads for comparison
+Check script: 01.Chopper_counts.ipynb
 
-Check script 02.Database_creation.ipynb
+# SILVA 16S Database downloaded for annotation 
+Full script for this part: https://github.com/joaoordine/Microbiota_Rhinosinusitis 
+I used the same pipeline and the indexed files created from KMA; then I just had to align mangrove filtered fastq against the index and processed them the same way. 
 
-## Reference alignment 
-KMA v1.4.14 - Clausen, Aarestrup & Lund. Rapid and precise alignment of raw reads against redundant databases with KMA. BMC Bioinformatics, 19, 307 (2018)
+# Taxonomy assignation to nanopore reads
+Check script: 02.Assin_Taxonomy_SILVA.ipynb
 
-### Sending all my fastq files - filtered- to my data file 
-```
-conda install bioconda::kma
-mkdir 16sequences_index_kma
-mkdir output_16s_refseq
-mkdir ../data/filtered_fastq | mv .fastq ../data/filtered_fastq 
-```
-### Create the databases needed to run KMA from a list of FASTA files
-```
-kma_index -i 16Ssequences.fasta -o 16sequences_index_kma/16Ssequences 
-```
+# Diversity analysis / Visualize taxonomy at different levels 
+Check script: 03.Diversity_analyses.ipynb
 
-### Map and/or align raw reads to a template database created using kma_index
-```
-for file in filtered_fastq/.fastq; do
-    filename=$(basename "$file")  # Extract the filename
-    filename_no_ext="${filename%.}"  # Remove the file extension
-    kma -i "$file" -o "output_16s_refseq/${filename_no_ext}_kma" -t_db 16sequences_index_kma/16Ssequences -bcNano -bc 0.7
-done 
-```
+# Correlation analyses
+Check script: 04.Corr_analyses.ipynb
 
-### Unzipping frag files to use as input for taxonomical assignation
-```
-gunzip Sample 
-mv .frag ..
-```
 
-## Calculate annotation frequency 
-I.e. the percentage of reads that were annotated using that database
-Check script 03.Calc_annotation_freq.ipynb
-
-# Taxonomy assignation to nanopore reads  
-Check script 04.Taxonomy_assign.ipynb
-
-# Diversity analysis
-Check script 05.Diversity_analysis.ipynb
-
-# Visualize taxonomy 
-Check script 06.Visualize_taxonomy.ipynb
-
-# Correlation analysis 
-Check script 07.Correlation_heatmap.ipynb
-
-# *2. Isolated bacteria - WGS (Illumina) pipeline*
+# ** 2. Isolated bacteria - WGS (Illumina) pipeline **
 Some mangrove isolates were selected for whole-genome sequencing (Illumina NovaSeq 6000) due to their features of interest.
 - Pipeline adapted from Borelli, et al. "Combining functional genomics and whole-genome sequencing to detect antibiotic resistance genes in bacterial strains co-occurring simultaneously in a Brazilian hospital." Antibiotics 10.4 (2021): 419.
 
@@ -522,11 +481,11 @@ rename 's/cleaned_//' cleaned_*
 mv *.fasta filtered_scaffolds
 ```
 
-# *3. Genome Mining - Environmental Bacteria*
+# ** 3. Genome Mining - Environmental Bacteria **
 Rapid annotation was performed using RAST web server: https://rast.nmpdr.org/
 
 ## Processing RAST output 
 Check script 09.Process_RAST_out.ipynb
-# *4. Bioremediation assessment* 
+# ** 4. Bioremediation assessment 
 Performed by analyzing growth curves, more specifically their growth rates
 Check script 10.Visualize_isolates_growth.ipynb
